@@ -5,30 +5,45 @@ export default function Home() {
     return (
         <>
 
-            {/* TopNavBar */}
-            <nav className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md">
-                <div className="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
-                    <Link className="font-headline-md text-headline-md font-bold text-primary" href="/">Handmade By Sarah</Link>
-                    <div className="hidden md:flex gap-8 items-center">
-                        <Link className="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="#">Katalog</Link>
-                        <Link className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#">Kategori</Link>
-                        <Link className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#">Custom</Link>
-                        <Link className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#">Tentang Kami</Link>
-                        <Link className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#">Blog</Link>
+            {/* TopNavBar - Floating Capsule */}
+            <div className="fixed top-0 w-full z-50 px-4 sm:px-8 pt-4 sm:pt-6 pointer-events-none">
+                <nav className="pointer-events-auto mx-auto max-w-6xl rounded-full bg-surface/80 backdrop-blur-xl border border-outline-variant/40 shadow-xl shadow-primary/5 px-4 sm:px-6 py-3 sm:py-3.5 flex justify-between items-center transition-all duration-300">
+                    <Link className="font-headline-md text-[20px] sm:text-[24px] font-bold text-primary tracking-tight pl-2" href="/">
+                        Handmade<span className="text-primary/70 font-medium">BySarah</span>
+                    </Link>
+                    
+                    <div className="hidden md:flex items-center p-1.5 rounded-full bg-surface-container-highest/40 border border-outline-variant/20">
+                        <Link className="px-5 py-2 rounded-full bg-primary text-on-primary font-body-md font-medium shadow-md shadow-primary/20 transition-all hover:scale-105 active:scale-95" href="#">Katalog</Link>
+                        <Link className="px-5 py-2 rounded-full text-on-surface hover:text-primary hover:bg-surface-container/80 font-body-md transition-all active:scale-95" href="#">Kategori</Link>
+                        <Link className="px-5 py-2 rounded-full text-on-surface hover:text-primary hover:bg-surface-container/80 font-body-md transition-all active:scale-95" href="#">Custom</Link>
+                        <Link className="px-5 py-2 rounded-full text-on-surface hover:text-primary hover:bg-surface-container/80 font-body-md transition-all active:scale-95" href="#">Tentang Kami</Link>
+                        <Link className="px-5 py-2 rounded-full text-on-surface hover:text-primary hover:bg-surface-container/80 font-body-md transition-all active:scale-95" href="#">Blog</Link>
                     </div>
-                    <div className="flex items-center gap-6">
-                        <button className="text-on-surface-variant hover:text-primary transition-all scale-95 active:scale-90">
-                            <span className="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+
+                    <div className="flex items-center gap-1 sm:gap-2 pr-1">
+                        <div className="hidden sm:flex items-center gap-1 border-r border-outline-variant/30 pr-3 mr-1">
+                            <button className="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 group">
+                                <span className="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="search">search</span>
+                            </button>
+                            <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 group relative">
+                                <span className="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="shopping_cart">shopping_cart</span>
+                                <span className="absolute top-2 right-2 w-2 h-2 bg-error rounded-full border border-surface"></span>
+                            </a>
+                            <button className="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 group">
+                                <span className="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="person">person</span>
+                            </button>
+                        </div>
+                        <button className="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all duration-300 active:scale-95 shadow-sm">
+                            <span className="material-symbols-outlined text-[20px]" data-icon="menu">menu</span>
                         </button>
-                        <button className="text-on-surface-variant hover:text-primary transition-all scale-95 active:scale-90">
-                            <span className="material-symbols-outlined" data-icon="person">person</span>
-                        </button>
-                        <button className="md:hidden text-on-surface-variant">
-                            <span className="material-symbols-outlined" data-icon="menu">menu</span>
-                        </button>
+                        {/* Mobile specific icons - shown when sm is hidden */}
+                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="sm:hidden w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 group relative">
+                            <span className="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="shopping_cart">shopping_cart</span>
+                            <span className="absolute top-2 right-2 w-2 h-2 bg-error rounded-full border border-surface"></span>
+                        </a>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <main className="pt-24 overflow-x-hidden">
                 {/* Hero Section */}
                 <section className="px-margin-desktop py-20 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -41,7 +56,7 @@ export default function Home() {
                             Setiap simpul benang adalah dedikasi. Kami menghadirkan karya rajut premium yang menggabungkan tradisi lokal dengan desain kontemporer untuk gaya hidup modern Anda.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md font-bold hover:scale-105 transition-transform">Belanja Sekarang</button>
+                            <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md font-bold hover:scale-105 transition-transform inline-block text-center">Belanja Sekarang</a>
                             <button className="border-1.5 border-primary text-primary px-8 py-4 rounded-full font-body-md font-bold hover:bg-primary/5 transition-colors border-2">Lihat Katalog</button>
                         </div>
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-8">
@@ -129,7 +144,7 @@ export default function Home() {
                             <h2 className="font-headline-lg text-headline-lg text-on-background">Koleksi Terlaris</h2>
                             <p className="text-on-surface-variant mt-2">Favorit pelanggan kami sepanjang masa.</p>
                         </div>
-                        <Link className="text-primary font-bold hover:underline" href="#">Lihat Semua Produk →</Link>
+                        <a className="text-primary font-bold hover:underline" href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer">Lihat Semua Produk →</a>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
                         {/* Product Card */}
