@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-error: #ba1a1a;
+  --color-inverse-primary: #e1c299;
+  --color-background: #faf9f6;
+  --color-tertiary: #5e604d;
+  --color-on-secondary: #ffffff;
+  --color-surface-variant: #e3e2e0;
+  --color-on-background: #1a1c1a;
+  --color-secondary: #715b3e;
+  --color-primary-container: #d2b48c;
+  --color-on-secondary-fixed: #281903;
+  --color-error-container: #ffdad6;
+  --color-primary-fixed: #feddb3;
+  --color-on-tertiary-fixed: #1b1d0e;
+  --color-surface-container-high: #e9e8e5;
+  --color-primary-fixed-dim: #e1c299;
+  --color-on-surface: #1a1c1a;
+  --color-primary: #725a39;
+  --color-surface-container-highest: #e3e2e0;
+  --color-tertiary-fixed-dim: #c8c8b0;
+  --color-on-secondary-container: #755f42;
+  --color-tertiary-fixed: #e4e4cc;
+  --color-surface-bright: #faf9f6;
+  --color-on-tertiary: #ffffff;
+  --color-on-surface-variant: #4d453c;
+  --color-on-primary-fixed: #281801;
+  --color-on-error-container: #93000a;
+  --color-outline-variant: #d1c5b8;
+  --color-outline: #7f766a;
+  --color-on-secondary-fixed-variant: #574329;
+  --color-inverse-surface: #2f312f;
+  --color-on-tertiary-fixed-variant: #474836;
+  --color-surface-container-low: #f4f3f1;
+  --color-inverse-on-surface: #f2f1ee;
+  --color-on-primary-container: #5b4526;
+  --color-secondary-fixed: #fcdeba;
+  --color-secondary-fixed-dim: #dfc29f;
+  --color-secondary-container: #f9dbb7;
+  --color-on-primary-fixed-variant: #584324;
+  --color-surface-container: #efeeeb;
+  --color-on-primary: #ffffff;
+  --color-tertiary-container: #babaa3;
+  --color-surface-dim: #dbdad7;
+  --color-on-tertiary-container: #494a38;
+  --color-on-error: #ffffff;
+  --color-surface: #faf9f6;
+  --color-surface-tint: #725a39;
+  --color-surface-container-lowest: #ffffff;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+  --spacing-base: 8px;
+  --spacing-margin-desktop: 64px;
+  --spacing-margin-mobile: 16px;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-playfair: var(--font-playfair), serif;
+  --font-plus-jakarta: var(--font-plus-jakarta), sans-serif;
+  
+  --font-headline-xl: var(--font-playfair);
+  --font-headline-lg: var(--font-playfair);
+  --font-body-sm: var(--font-plus-jakarta);
+  --font-headline-md: var(--font-playfair);
+  --font-body-md: var(--font-plus-jakarta);
+  --font-label-md: var(--font-plus-jakarta);
+  --font-body-lg: var(--font-plus-jakarta);
+  --font-headline-lg-mobile: var(--font-playfair);
+
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 56px;
+  --text-headline-xl--letter-spacing: -0.02em;
+  --text-headline-xl--font-weight: 700;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--font-weight: 600;
+
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 20px;
+  --text-body-sm--font-weight: 400;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 600;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-md: 12px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--letter-spacing: 0.05em;
+  --text-label-md--font-weight: 600;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--font-weight: 400;
+
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 36px;
+  --text-headline-lg-mobile--font-weight: 600;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  background-image: url("https://www.transparenttextures.com/patterns/linen-paper.png");
+  background-repeat: repeat;
+}
+
+.soft-shadow {
+  box-shadow: 0 10px 40px -10px rgba(210, 180, 140, 0.2);
+}
+
+.loom-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.loom-carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
