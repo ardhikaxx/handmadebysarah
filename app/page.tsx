@@ -68,12 +68,12 @@ export default function Home() {
                     </div>
                     <div className="relative grid grid-cols-2 gap-4">
                         <div className="space-y-4 pt-12">
-                            <Image width={800} height={800} alt="Tote Bag" className="rounded-xl w-full h-64 object-cover soft-shadow" data-alt="A premium handmade crochet tote bag featuring a complex geometric weave pattern in earthy tones like beige and soft brown. The bag is placed in a bright, minimalist studio setting with soft morning light filtering through a linen curtain, emphasizing the tactile texture of the high-quality organic cotton yarn." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR3A18emlLcmVchTASLEzFoyil1B-5PvKGPNbsjwDdtyq--WcoNOlkZWxUytDUEWirS11fnAnVz5VC9CNgBuZpncn43TwjlKt_vAVat8HPhD0HGkLEdIMqjRFJpi030qnZDJiMt23IO98dKM6aNmouAmvlcLha_hbMZrka4J5VoaWOGuOJkPEnL510DOQPRsnJSw0HLWRJdLN27qOkDcGd0y8tZ2y8GcxezIeMmPPHNziAcDUsQbZrATZi70j3MMJiELsZbmLXFww" />
-                            <Image width={800} height={800} alt="Amigurumi" className="rounded-xl w-full h-80 object-cover soft-shadow" data-alt="A collection of adorable amigurumi toys including a small brown bear and a white rabbit, meticulously handcrafted with soft yarn. They are arranged on a light cream surface with a few wooden blocks in the background, creating a warm, artisanal, and cozy aesthetic. The lighting is soft and ambient, highlighting the delicate stitch work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr5oLd8KCk9ZrdKmcmrIGWuYLaitU3jYzfuqMDnEYKBN5cUG_T7FvKrSKWx6qpkNDm-TubFyjH1SCG2yR5hKiZq3uJjFZns380RP00ldoNWZsApt8kkV5iA1WQOU_T_1MQnoucC2z6gBY7mqNHi7lXT2G70br8oNQx5fzUXCCXOYSV8e7mS41MuT28UvEU-QPEAUxWQ40uMpN8HjeuVPK8261Rgvg6SeHV7oUt4aokdLZv_JAx3YO33FW9O6yM6woFdfxki08ero0" />
+                            <Image width={800} height={800} alt="Tote Bag" className="rounded-xl w-full h-64 object-cover soft-shadow" data-alt="A premium handmade crochet tote bag featuring a complex geometric weave pattern in earthy tones like beige and soft brown. The bag is placed in a bright, minimalist studio setting with soft morning light filtering through a linen curtain, emphasizing the tactile texture of the high-quality organic cotton yarn." src="/assets/produk/produk1.jpg" />
+                            <Image width={800} height={800} alt="Amigurumi" className="rounded-xl w-full h-80 object-cover soft-shadow" data-alt="A collection of adorable amigurumi toys including a small brown bear and a white rabbit, meticulously handcrafted with soft yarn. They are arranged on a light cream surface with a few wooden blocks in the background, creating a warm, artisanal, and cozy aesthetic. The lighting is soft and ambient, highlighting the delicate stitch work." src="/assets/produk/produk2.jpg" />
                         </div>
                         <div className="space-y-4">
-                            <Image width={800} height={800} alt="Crochet Hat" className="rounded-xl w-full h-96 object-cover soft-shadow" data-alt="A stylish, minimalist crochet bucket hat in a soft cream color, styled on a wooden mannequin head. The background is a clean, neutral wall with a subtle linen texture. The focus is on the intricate detail of the stitch patterns, showcasing the premium handmade quality and modern fashion appeal of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA10ojCojlWOd8a18GLkgnZbOca0aNF43yDeZh5cRnkHNirlt2-dkJRr70f6V19IsAwtjG5F89Hfka1bfY73NsAdBtuG9QzlQ0PHz5I1krOHfxqUtIBsUzUiKQx-JnFkv962_LIbLu7afJe3W47mOhyo7tP18-7PtyY4Rql7rN-BDYm5c-XHbwhG-p5fjW5u-Kmc7wShPXk86c0YlLLN1lnEbZuryf2dJkN6xPl-icmwmmqZlGbRL46wtqxBSktFG2JDknvpfU6Ww8" />
-                            <Image width={800} height={800} alt="Process" className="rounded-xl w-full h-48 object-cover soft-shadow" data-alt="A close-up shot of an artisan's hands working with a crochet hook and high-quality beige yarn. The setting is warm and domestic, with soft golden light illuminating the fine details of the craft. The scene exudes a sense of calm, focus, and traditional Indonesian craftsmanship in a contemporary light-mode style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfXXaO2EsJSs6wVzObrUyRGs2ctGBWa3iGRilalkOlC7Y10rFO2ooXNcloUqAprlCju7JUsjpUU6O80OyRNqLbOOb-BQEPGtAt8SIYCmeTWCHp3rh_HAzWt2_bXc7id8_pWfob9nSKyzCuugPDvz08PXJWy-BrKoQiVyp0SoMcUM3MBRsrJVXZ8MGN4OUJdIBgC_X5AgEQsrf3JywCSkNt2TeRCo3-Fy5m2Rgdwk_RID045e14oVxNRJJNquugYS7FMJROKWTE_0c" />
+                            <Image width={800} height={800} alt="Crochet Hat" className="rounded-xl w-full h-96 object-cover soft-shadow" data-alt="A stylish, minimalist crochet bucket hat in a soft cream color, styled on a wooden mannequin head. The background is a clean, neutral wall with a subtle linen texture. The focus is on the intricate detail of the stitch patterns, showcasing the premium handmade quality and modern fashion appeal of the brand." src="/assets/produk/produk3.jpg" />
+                            <Image width={800} height={800} alt="Process" className="rounded-xl w-full h-48 object-cover soft-shadow" data-alt="A close-up shot of an artisan's hands working with a crochet hook and high-quality beige yarn. The setting is warm and domestic, with soft golden light illuminating the fine details of the craft. The scene exudes a sense of calm, focus, and traditional Indonesian craftsmanship in a contemporary light-mode style." src="/assets/produk/produk4.jpg" />
                         </div>
                     </div>
                 </section>
@@ -88,49 +88,49 @@ export default function Home() {
                             {/* Category Card Template */}
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Totebag" className="w-full h-full object-cover rounded-xl" data-alt="A boutique-style crochet tote bag with a minimalist design, displayed on a clean white pedestal. The lighting is high-key and soft, emphasizing the natural fibers of the yarn and the sophisticated craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADrpM3wwgRKPwmp074S5eYceOAOnfh6dJHqv1sRfEEE52tSAEX_tqZJYfj74CKlVlFmy0HAelT0mSU8OOqN5id3yvjnmORM1Zyh-hCYupFYte2ONaQmCdop5IUxxFfkeRz_VL9rJrSMB_OHEypz7-zlMk5TujCnNdzwvTdWrSFpO7G1HeaZPO_ey4EVOVpHLaoQuUXLhdP0N1qLST98WqSsNChjgwtQagJQXPdZVCv3U1wU0IfXMojRfkNR6DvRgDbGNPHwq-koGA" />
+                                    <Image width={800} height={800} alt="Totebag" className="w-full h-full object-cover rounded-xl" data-alt="A boutique-style crochet tote bag with a minimalist design, displayed on a clean white pedestal. The lighting is high-key and soft, emphasizing the natural fibers of the yarn and the sophisticated craft." src="/assets/produk/produk5.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Totebag</h3>
                             </Link>
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Topi" className="w-full h-full object-cover rounded-xl" data-alt="A stylish, hand-knit summer hat in light sand color, resting on a white wooden table next to a sprig of dried lavender. The aesthetic is modern artisanal and serene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfiF2otq2NjxuMtXlY4ptsUv71JmDBfiC40pBTBA0rhOK77xLqg7q4ugY0H8sUq9MwKYA0ktCFKiuov8XqF_4x8c8xJL_xeBX4LhiHHwku67thNrofINtGYeKBViCVk9QcFEMm9dlyxsDqLPdJtmNq96ktp3ksUUmj9h0TZ5Ko5o8PPkemDU_19Q_sTUTRP8Q5oj3IogeVpzwkD3FrLNB-xviJMffnaE4JolJrq2S_cpZCKlDCQPXHca5JCTYkcdEuMG4NCG2NTTA" />
+                                    <Image width={800} height={800} alt="Topi" className="w-full h-full object-cover rounded-xl" data-alt="A stylish, hand-knit summer hat in light sand color, resting on a white wooden table next to a sprig of dried lavender. The aesthetic is modern artisanal and serene." src="/assets/produk/produk1.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Topi</h3>
                             </Link>
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Amigurumi" className="w-full h-full object-cover rounded-xl" data-alt="A charming set of miniature crochet amigurumi animals in soft pastel colors, perfectly arranged against a minimalist cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqfeppSC53dQ8a9-2YRF6dJdjhVXNO87IzQU71aLqYqid-3h18aJl7O18qDmwJn6VY6gMmAapVtADuqIkudiOGzyAn0DSpkAmODIyZ8o4eR4ytnv8HE8a2GfxBYdvrSUcsHZhcMgd2b0slT7abUII-JB2vszfqCVYIwXCMLaupk0xAvQxZkb-MTKxKrd6rcnJ8-cA_RCmp0847Qy7z_5uhef9UU_-_7UVsw-neEkzqwlYYRFnskGxY_ZWsq04kzjVwbPfSYJE8Vxs" />
+                                    <Image width={800} height={800} alt="Amigurumi" className="w-full h-full object-cover rounded-xl" data-alt="A charming set of miniature crochet amigurumi animals in soft pastel colors, perfectly arranged against a minimalist cream background." src="/assets/produk/produk2.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Amigurumi</h3>
                             </Link>
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Dompet" className="w-full h-full object-cover rounded-xl" data-alt="A small, elegant crochet coin purse with a vintage metal clasp, handmade with precision. The color is a soft caramel brown." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6p_hjwNlBwqJLr6V62Ae01GDllfLHBVzjdu6jGFteuu9O711YH7bQ0jOIUx5jdD3Jc7RVetodGBXY5JQQcbCEpil6buOQB2qSMKLN9L00ckpe1ssPP-lGcqq9iSjSGW2Po5smT7Z8tC2dfZYEsq0SxBorMP4M6U9PX9qUKeai4wUdPA6wO6OoZw_hw0TwTIg9KzDWddgdNyMJ3XDklseqVknMqT-RRq6X9pKSR73K11wOVtpN7_EPXpYJMZoP-DWOfGynQLALJ3E" />
+                                    <Image width={800} height={800} alt="Dompet" className="w-full h-full object-cover rounded-xl" data-alt="A small, elegant crochet coin purse with a vintage metal clasp, handmade with precision. The color is a soft caramel brown." src="/assets/produk/produk3.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Dompet</h3>
                             </Link>
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Tas" className="w-full h-full object-cover rounded-xl" data-alt="A premium crochet handbag with a sophisticated wooden handle, showcasing exquisite Indonesian craftsmanship in a luxury retail setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuLId1uyHv-Hvry7PZ1fNxqkeT3FwAUlzAgXfEmv4dzE0gxK_Rwa1U-9sVc8mtzixwf5P5DFcCSYvEZTy2oX6DtxMzV4ShTdofjMj69MRxyymoTXQ3FWfeLeZ4MSZBum1KUAoLgUZJOs2l85d7brXO9PEORMRrvxWXbyYMvN0syPnl3gx8UtrSKUxTQseIGxczFiFWYGEDxW6XNROy1O2xeGHHOcP6wEfep_COk6TOiLOPEF0TToMZXQCBqY0G8fhHxAGX6f9zI3w" />
+                                    <Image width={800} height={800} alt="Tas" className="w-full h-full object-cover rounded-xl" data-alt="A premium crochet handbag with a sophisticated wooden handle, showcasing exquisite Indonesian craftsmanship in a luxury retail setting." src="/assets/produk/produk4.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Tas</h3>
                             </Link>
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Aksesoris" className="w-full h-full object-cover rounded-xl" data-alt="Detailed close-up of crochet hair accessories and earrings, featuring delicate floral patterns and soft-toned threads." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYiOCSSz3XVjXPc8DqmFX2NChVP9eV8esMSjKJ8ljIJGqO2Cv8u2_8JV7SWPfD-tsbdjbSL3I_aKFfMoH9p3vkZYTnflsmz4pzVpqsT3oSzSAv3uOJVgscU7YFa1GZtcU2OiUcsniYCPwaM6sas2KiBDvD_j2Ha1wLGzyGZ3C6lm2s3jybXJH1MKSLUYykc8kp72mnjCWk-Zt_eTRc8iIeW3WaZXc5ioYTM0WuG_RrtYrIlTx1jJOAHSfy7in7sl3Lra72gZVtaVs" />
+                                    <Image width={800} height={800} alt="Aksesoris" className="w-full h-full object-cover rounded-xl" data-alt="Detailed close-up of crochet hair accessories and earrings, featuring delicate floral patterns and soft-toned threads." src="/assets/produk/produk5.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Aksesoris</h3>
                             </Link>
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Dekorasi" className="w-full h-full object-cover rounded-xl" data-alt="A minimalist living room with a beautiful handmade crochet wall hanging and coasters, creating a cozy and organic home atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsBRrP0D779qAUIfdlT9aI1aFuHoYciIjd22uIRfPTt_OtVRcWW5tK2KOw307rXWGjPhuEKtUpONQIKO73rcZZWyYAbUlww-s5v97zCeD-ba0QZWuU_IkKhEnH5nyUXbaKxRgduKez6aW4aKzbXC06Pjo83TNwZgYUQyFq5ilpkKym1OJ4nj4wXmoKgDOzcdUorY4OVEGMVousfOcVtkIw-dZbvQvTy1OW4fd_-HdelnSXmrCPvnqwLlYLp20dJ5PXFycq794DGo8" />
+                                    <Image width={800} height={800} alt="Dekorasi" className="w-full h-full object-cover rounded-xl" data-alt="A minimalist living room with a beautiful handmade crochet wall hanging and coasters, creating a cozy and organic home atmosphere." src="/assets/produk/produk1.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Dekorasi Rumah</h3>
                             </Link>
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Custom" className="w-full h-full object-cover rounded-xl" data-alt="A flat lay of colorful yarn skeins, crochet hooks, and a sketchpad, representing the endless possibilities of custom orders at Handmade By Sarah." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNHvniu-QHmyqMxufxZ95ojZaAQjBdtaYaViDBiP8fpW-tZZXERIbNZgOV3gUUFVlVIfKz-BoikDs3rTnJnj2x1lYZv2SBhYuArtXa9IVQfD4nwKeolsv2n4fA30mNBLyqg7RjZpI0AKkH_yFXPuCSFuD1thrmLL2iCf5o6nVs5HLrqdM50W8nZ_iWivjDWQmdKesWPENMS6UWJA4rgbV7btG4GhlzwJbKRSekflY_4cpV_sLijES1VRw3bcBfjtuGHDcwroiOAKw" />
+                                    <Image width={800} height={800} alt="Custom" className="w-full h-full object-cover rounded-xl" data-alt="A flat lay of colorful yarn skeins, crochet hooks, and a sketchpad, representing the endless possibilities of custom orders at Handmade By Sarah." src="/assets/produk/produk2.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Custom</h3>
                             </Link>
@@ -141,102 +141,246 @@ export default function Home() {
                 <section className="py-32 px-margin-desktop max-w-container-max mx-auto">
                     <div className="flex justify-between items-end mb-16">
                         <div>
-                            <h2 className="font-headline-lg text-headline-lg text-on-background">Koleksi Terlaris</h2>
+                            <h2 className="font-headline-lg text-headline-lg text-on-background">Produk Terlaris</h2>
                             <p className="text-on-surface-variant mt-2">Favorit pelanggan kami sepanjang masa.</p>
                         </div>
                         <a className="text-primary font-bold hover:underline" href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer">Lihat Semua Produk →</a>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-                        {/* Product Card */}
-                        <div className="group bg-white rounded-2xl p-4 soft-shadow hover:shadow-lg transition-all">
-                            <div className="relative overflow-hidden rounded-xl aspect-[4/5] bg-surface-container-low">
-                                <span className="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full z-10">BEST SELLER</span>
-                                <Image width={800} height={800} alt="Product 1" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A premium handmade crochet handbag in deep navy blue, with a soft ambient shadow on a light wooden background. The bag features a high-quality finish and elegant stitch patterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj1EZNU_-njSjpNulLJVoFQ0r3mNDuJg8ro5nX87bawraJwwEBH5zuJ33I3Um_VVhvIK5bppQgBgzoab2gQBKcjqAXCIhZ3XSMhsIuH2bzHl_SDZP27Z11lYKIENaWSXRLCWVm7kcSTIWvud8yQXvI38NZ0wEyl1cYsmsxiLMW9f_1hTtzvwZJphrtTAgJdni1qyqsV9DKOoRZuc3-Ibmu02J53ksjpmlC8U0wBPMx-jHR-St03EbGGi84TUt4BwBFHnu6HGGvqZo" />
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                                    <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-                                        <span className="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-                                    </button>
-                                    <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-                                        <span className="material-symbols-outlined" data-icon="favorite">favorite</span>
-                                    </button>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-gutter">
+                        {/* Product 1 */}
+                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
+                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
+                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
+                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
+                                    <Image width={800} height={800} alt="Produk 1" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk1.jpg" />
+                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
+                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
+                                        </div>
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
+                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
+                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
+                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
+                                            Beli Sekarang
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="p-6 flex flex-col flex-1 relative bg-white">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <div className="flex gap-0.5 text-[#FFB800]">
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                        </div>
+                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
+                                    </div>
+                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci Telanjang (PLUSHIE AMIGURUMI)">
+                                        Boneka Rajut Kelinci Telanjang (PLUSHIE AMIGURUMI)
+                                    </h3>
+                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
+                                        <div>
+                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
+                                            <p className="font-bold text-[18px] text-primary">Rp 145.902</p>
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
+                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="mt-6 text-center space-y-2">
-                                <div className="flex justify-center text-yellow-500">
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                        </a>
+
+                        {/* Product 2 */}
+                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
+                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
+                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
+                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
+                                    <Image width={800} height={800} alt="Produk 2" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk2.jpg" />
+                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
+                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
+                                        </div>
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
+                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
+                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
+                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
+                                            Beli Sekarang
+                                        </span>
+                                    </div>
                                 </div>
-                                <h3 className="font-headline-md text-headline-md">Sling Bag Artisan</h3>
-                                <p className="text-on-surface-variant font-label-md">Rp 185.000 <span className="line-through text-outline ml-2">Rp 210.000</span></p>
-                            </div>
-                        </div>
-                        {/* Repeat Product Card (x3) */}
-                        <div className="group bg-white rounded-2xl p-4 soft-shadow hover:shadow-lg transition-all">
-                            <div className="relative overflow-hidden rounded-xl aspect-[4/5] bg-surface-container-low">
-                                <Image width={800} height={800} alt="Product 2" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A beautiful handmade crochet amigurumi bear in a soft cream and light brown color. The bear is presented on a minimalist neutral-toned surface with professional soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX5_oIY3_qSbvm44k1DmnN3TlRFv-OgAZ3Xr9ztGdYowxYNfE6EftHHkiBRyUcBlaqAQZLnBfGGwd6eRZv-72MbHEoBflM6iP4snESEuX3jCy7EBzj6DGdvXvSpIt3zKlMRL0E6TsGeladrNmMj2jp906hZq7lPNuEQkV7mYv0ALmlLXB9d1P5T5yNDes8i3qnmcUwnYN55TlCXH2jjHzSLVlVA9NLH32knaEsR-Bvar1hsIpiSmgFHKyYIDywUclmVIXTCNxHonE" />
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                                    <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-                                        <span className="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="mt-6 text-center space-y-2">
-                                <div className="flex justify-center text-yellow-500">
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                </div>
-                                <h3 className="font-headline-md text-headline-md">Amigurumi Bear</h3>
-                                <p className="text-on-surface-variant font-label-md">Rp 120.000</p>
-                            </div>
-                        </div>
-                        <div className="group bg-white rounded-2xl p-4 soft-shadow hover:shadow-lg transition-all">
-                            <div className="relative overflow-hidden rounded-xl aspect-[4/5] bg-surface-container-low">
-                                <Image width={800} height={800} alt="Product 3" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A minimalist and sustainable crochet bucket hat in earth tones, displayed in a high-end boutique setting. The craftmanship is detailed and precise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-BAT5ysfbacWmj4SbD_N4crsMDtgiPfUOk3w5mNTQOiUHQru38tzbhiFSK2ooRJ6i6lZ9E-rmXlp7MUEfY3PqAEM-5YF9vDrOdSXknOFutcExNAIMZKoDW9szORUxwEIKBhD5nIIEMaaE0xCf4rMn5e74IyCcB15qqJCBZoAnN-9kJLt1qpOxL7qduYAjphxz9JF_meH_n1QQg9tFrdCYLh2Zbs7HiQCok2SfA3Rd5Tdt_RVH4InSyeL5rakT7PgKhYe-8QBEWVg" />
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                                    <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-                                        <span className="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="mt-6 text-center space-y-2">
-                                <div className="flex justify-center text-yellow-500">
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                </div>
-                                <h3 className="font-headline-md text-headline-md">Bucket Hat Terra</h3>
-                                <p className="text-on-surface-variant font-label-md">Rp 95.000</p>
-                            </div>
-                        </div>
-                        <div className="group bg-white rounded-2xl p-4 soft-shadow hover:shadow-lg transition-all">
-                            <div className="relative overflow-hidden rounded-xl aspect-[4/5] bg-surface-container-low">
-                                <Image width={800} height={800} alt="Product 4" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A sophisticated crochet clutch bag with a textured pattern and a minimalist aesthetic. The bag is held by a hand to show scale, emphasizing its luxury and handmade quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSINRA8qKHNGFpWporSe-5rrnzmuR6WsSj7cmD_n5KpEA2Z1ID164ReRYnTxwD0gR60PnI9iJanFWo81yzq_PINdxERy9Kudpzq2caC8yUwmi7uBWKS5xJxjWV4ytQhBLuuEkEYjjimx9WRSNNdhckK3nGYnItqWdOVJKtStZysg9L56yYyuAZP3fCevkXsFlHyPqxVvL_1OZlRvmzXG3BlhCtWWdrmxJgbgkFw2xXDi0n3fbWfWihf9xokPegAANcrKhNani9lqg" />
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                                    <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-                                        <span className="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-                                    </button>
+                                <div className="p-6 flex flex-col flex-1 relative bg-white">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <div className="flex gap-0.5 text-[#FFB800]">
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                        </div>
+                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
+                                    </div>
+                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci dengan Dress dan Topi Kodok">
+                                        Boneka Rajut Kelinci dengan Dress dan Topi Kodok
+                                    </h3>
+                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
+                                        <div>
+                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
+                                            <p className="font-bold text-[18px] text-primary">Rp 198.500</p>
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
+                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="mt-6 text-center space-y-2">
-                                <div className="flex justify-center text-yellow-500">
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                    <span className="material-symbols-outlined text-[16px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                        </a>
+
+                        {/* Product 3 */}
+                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
+                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
+                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
+                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
+                                    <Image width={800} height={800} alt="Produk 3" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk3.jpg" />
+                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
+                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
+                                        </div>
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
+                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
+                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
+                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
+                                            Beli Sekarang
+                                        </span>
+                                    </div>
                                 </div>
-                                <h3 className="font-headline-md text-headline-md">Elegant Clutch</h3>
-                                <p className="text-on-surface-variant font-label-md">Rp 145.000</p>
+                                <div className="p-6 flex flex-col flex-1 relative bg-white">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <div className="flex gap-0.5 text-[#FFB800]">
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                        </div>
+                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
+                                    </div>
+                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci dengan Dress dan Floppy Hat">
+                                        Boneka Rajut Kelinci dengan Dress dan Floppy Hat
+                                    </h3>
+                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
+                                        <div>
+                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
+                                            <p className="font-bold text-[18px] text-primary">Rp 242.000</p>
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
+                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+
+                        {/* Product 4 */}
+                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
+                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
+                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
+                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
+                                    <Image width={800} height={800} alt="Produk 4" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk4.jpg" />
+                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
+                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
+                                        </div>
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
+                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
+                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
+                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
+                                            Beli Sekarang
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="p-6 flex flex-col flex-1 relative bg-white">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <div className="flex gap-0.5 text-[#FFB800]">
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                        </div>
+                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
+                                    </div>
+                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci dengan Hoodie">
+                                        Boneka Rajut Kelinci dengan Hoodie
+                                    </h3>
+                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
+                                        <div>
+                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
+                                            <p className="font-bold text-[18px] text-primary">Rp 242.000</p>
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
+                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        {/* Product 5 */}
+                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
+                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
+                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
+                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
+                                    <Image width={800} height={800} alt="Produk 5" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk5.jpg" />
+                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
+                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
+                                        </div>
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
+                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
+                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
+                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
+                                            Beli Sekarang
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="p-6 flex flex-col flex-1 relative bg-white">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <div className="flex gap-0.5 text-[#FFB800]">
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                        </div>
+                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
+                                    </div>
+                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci dengan Kemeja dan Topi Kodok">
+                                        Boneka Rajut Kelinci dengan Kemeja dan Topi Kodok
+                                    </h3>
+                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
+                                        <div>
+                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
+                                            <p className="font-bold text-[18px] text-primary">Rp 242.000</p>
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
+                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </section>
                 {/* Tentang Brand */}
@@ -244,7 +388,7 @@ export default function Home() {
                     <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                         <div className="relative">
                             <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary-fixed rounded-full opacity-30 blur-3xl"></div>
-                            <Image width={800} height={800} alt="Craft Process" className="rounded-3xl soft-shadow relative z-10 w-full object-cover" data-alt="A detailed, warm-toned photograph of Indonesian artisans working together in a well-lit, minimalist studio. They are focused on creating intricate crochet patterns using sustainable materials. The setting is modern and artisanal, reflecting the brand's commitment to quality and tradition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABfUjeSoPTVcirUoJ9jpJZunJ4RBxK0T60jas0DaV1x9xLM_30LeRm3lKdJCif5ZtEWQeesqTTrpO2YeACL6D7FAYTuPbuXDvsd4KvP86WX21lxiw8qFUUXw9iNJwQlAWAA4wPmcyfo6AzVHDLPnrnGAmKPO6RpC8CKbhskgwtubGVy_TN2SrmNW5pdAnMRSvHjJtV5jo2e6WyrdeGIHxPLI6r0GQcMfIIrk3LtXP18P-xRQ9kKrwEZKF--bn0mjZdIgn2chvGutM" />
+                            <Image width={800} height={800} alt="Craft Process" className="rounded-3xl soft-shadow relative z-10 w-full object-cover" data-alt="A detailed, warm-toned photograph of Indonesian artisans working together in a well-lit, minimalist studio. They are focused on creating intricate crochet patterns using sustainable materials. The setting is modern and artisanal, reflecting the brand's commitment to quality and tradition." src="/assets/produk/produk3.jpg" />
                             <div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl soft-shadow z-20 max-w-[240px]">
                                 <p className="font-body-md italic text-primary">&quot;Kami percaya bahwa keindahan sejati lahir dari kesabaran dan keahlian tangan manusia.&quot;</p>
                             </div>
@@ -303,13 +447,13 @@ export default function Home() {
                         <div className="lg:w-1/2 space-y-8">
                             <h2 className="font-headline-lg text-headline-lg text-on-secondary-container">Ingin Produk yang Lebih Personal?</h2>
                             <p className="font-body-lg text-on-secondary-container/80">Kami menerima pesanan custom sesuai keinginan Anda. Mulai dari warna, ukuran, hingga desain khusus untuk kado atau penggunaan pribadi.</p>
-                            <button className="bg-primary text-on-primary px-10 py-5 rounded-full font-bold flex items-center gap-3 hover:scale-105 transition-transform">
+                            <a href="https://wa.me/message/YE44OXBSTECGN1" target="_blank" rel="noopener noreferrer" className="bg-primary text-on-primary px-10 py-5 rounded-full font-bold inline-flex items-center gap-3 hover:scale-105 transition-transform shadow-lg hover:shadow-primary/30 w-fit">
                                 <span className="material-symbols-outlined" data-icon="chat">chat</span>
                                 Hubungi WhatsApp Kami
-                            </button>
+                            </a>
                         </div>
                         <div className="lg:w-1/2">
-                            <Image width={800} height={800} alt="Custom Order" className="rounded-2xl soft-shadow w-full h-[400px] object-cover" data-alt="A beautiful flat lay of various high-quality yarn skeins in a gradient of earthy and warm tones, with a crochet hook and a personalized order note. The image represents the creative process of custom orders in a modern, artisanal style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFG3FeaBp3TEmwej-glxC_lAhHh2dNJZOSxU1ms1x4cPFpGqLYnw3Cbw38j4PLDv1_Sif9RPDRgYuhqkxO30EHeOzXto4j2BrLUR7uU_AtbXy3xEUv2YcIIY0SCY6oNxQzH7NIexHd8-XNowDb6lQsJUwPfV7Oa5EQSPCZYqnUevZ1uZDrM0fGN9i0G1vM4NQNylKnFt06_nBOhC5qeQz46_q9D0JaDfdRly5UxRD2aPFzdsibCCcfP8jreeDIhhr_dVDievUIgCM" />
+                            <Image width={800} height={800} alt="Custom Order" className="rounded-2xl soft-shadow w-full h-[400px] object-cover" data-alt="A beautiful flat lay of various high-quality yarn skeins in a gradient of earthy and warm tones, with a crochet hook and a personalized order note. The image represents the creative process of custom orders in a modern, artisanal style." src="/assets/produk/produk4.jpg" />
                         </div>
                     </div>
                 </section>
@@ -322,19 +466,19 @@ export default function Home() {
                         </div>
                         <div className="columns-1 sm:columns-2 lg:columns-3 gap-gutter space-y-gutter">
                             <div className="relative group cursor-pointer overflow-hidden rounded-2xl">
-                                <Image width={800} height={800} alt="Gallery 1" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A high-detail close-up of an intricate crochet pattern on a luxury bag. The lighting is soft, highlighting the physical texture of the yarn." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXcTk1uahUmKjQU-HFuA22RFVDuS4RE8VCrrdLjgSWT7Ps0aXkdry_S8ppRzCdWCEIUwqNK6n3TGxawtciH-y2Vl_6fIxGChqIdLwXr36rynwoOSg_wfgINTPDpxf5H5H3p8_wDW9G0IdLE8wsm3XfCrYF6XA7a0_fO4BDVdefsMKjl6xhhT9X_3d4kzYecd3QH58mNv_BUm68ZGQ6_mJ7rxlqP1xwUlPJMyqop-IJxH3CIwRgBL3pkjfwHjkJ8I6u7QamExFnba0" />
+                                <Image width={800} height={800} alt="Gallery 1" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A high-detail close-up of an intricate crochet pattern on a luxury bag. The lighting is soft, highlighting the physical texture of the yarn." src="/assets/produk/produk5.jpg" />
                                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                     <span className="text-white font-bold">Detail Texture</span>
                                 </div>
                             </div>
                             <div className="relative group cursor-pointer overflow-hidden rounded-2xl">
-                                <Image width={800} height={800} alt="Gallery 2" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A beautiful handmade crochet bag displayed in a sunlit room, with long shadows creating a modern and calm aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVSFA55EO59i92_46W7ATHAPKH8mCQBOVYjrCO9buNfRUcaLvZ1NH3mKnqZAz5FmsoByPoL1H2l1buMkRuQFTWYk8nYRZ-xuaGFdHYcOMGZqDI8VGq_2F3NMGWxUH4jEk02EraGKtMdxYB1RHtqzshcAp9I7vqA8mnuoSv7qe7kcgYb7AY3zNn1_cHxuIYofmwQC8Q2R9NBscWNNXnAQbXHLU1FYbAstghlMZuW36nkwhwN4OglymgYwLe4iTVwn16JT5suy1c2qI" />
+                                <Image width={800} height={800} alt="Gallery 2" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A beautiful handmade crochet bag displayed in a sunlit room, with long shadows creating a modern and calm aesthetic." src="/assets/produk/produk1.jpg" />
                                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                     <span className="text-white font-bold">Modern Style</span>
                                 </div>
                             </div>
                             <div className="relative group cursor-pointer overflow-hidden rounded-2xl">
-                                <Image width={800} height={800} alt="Gallery 3" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of a charming crochet amigurumi character, emphasizing the fine stitch work and soft pastel colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1ptprgiJFuIAlL5jX6Z_B-l9KJZEnKFiwqIr38XMKsptyNmOu69FUrK5KYEgKuZoGQc0cvBDrx43JDC9aJo1yhDyjS7mfEGFjbHGixA7guBuZPYXyXq5BdqZHiw9xvFqrTnB5vcfEL8SJo4pit7WzJ_P3evyyyDaUNbao3xF3zsPVf1IbsuZ_TXrd-frFy6RlqgYCjMD9d8e2b_bNT4DTZui6IzmiMGaJtYHD53LXrUzgos1ilCuMdwflwRWGWV7NXPGGOCWcsbs" />
+                                <Image width={800} height={800} alt="Gallery 3" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of a charming crochet amigurumi character, emphasizing the fine stitch work and soft pastel colors." src="/assets/produk/produk2.jpg" />
                                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                                     <span className="text-white font-bold">Amigurumi Love</span>
                                 </div>
@@ -350,7 +494,7 @@ export default function Home() {
                             <p className="max-w-2xl mx-auto opacity-80">Saksikan bagaimana setiap produk kami diciptakan dari hati.</p>
                         </div>
                         <div className="relative max-w-4xl mx-auto aspect-video bg-surface-container-highest rounded-3xl overflow-hidden soft-shadow group">
-                            <Image width={800} height={800} alt="Video Showcase" className="w-full h-full object-cover opacity-80" data-alt="Cinematic wide shot of a peaceful studio where an artisan is working on a large crochet project. Warm light fills the room, creating an atmosphere of focus and tradition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQUBxTSywEHRSvfa06MrGqfiNXjeBYTjk_HcgvZeV2WIA12PtJ5QSeACE3OEwtNRGfgij1VODhEMWU1gPTKtat-KTktYtX5S8pVRs-1I0v57Bc3DEkNrF60dzNWhha4HlP8nOfDriE62ajIotq06RT_Lhr2q_IhDgbrHQkdIs-12ednP8rskM4ULE8ZJqpULQjOxtMMmH_afreII17527D7FGZnVRzRexFIMPe4tZ0EETNksqsePHoE1rL3MhR9aePVNulw-quebU" />
+                            <Image width={800} height={800} alt="Video Showcase" className="w-full h-full object-cover opacity-80" data-alt="Cinematic wide shot of a peaceful studio where an artisan is working on a large crochet project. Warm light fills the room, creating an atmosphere of focus and tradition." src="/assets/produk/produk3.jpg" />
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <button className="w-24 h-24 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border-2 border-white hover:scale-110 transition-transform group-hover:bg-white group-hover:text-primary">
                                     <span className="material-symbols-outlined text-5xl" style={{ 'fontVariationSettings': '"FILL" 1' }}>play_arrow</span>
@@ -402,18 +546,24 @@ export default function Home() {
             <footer className="bg-surface-container-low py-20 px-margin-desktop">
                 <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
                     <div className="space-y-6">
-                        <Link className="font-headline-md text-headline-md text-primary block" href="#">Handmade By Sarah</Link>
+                        <Link className="font-headline-md text-headline-md text-primary block" href="/">Handmade By Sarah</Link>
                         <p className="text-body-sm text-on-surface-variant">Menghadirkan keindahan rajut tradisional dalam gaya hidup modern. Dibuat dengan cinta, simpul demi simpul.</p>
-                        <div className="flex gap-4">
-                            <Link className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
-                                <span className="material-symbols-outlined text-sm" data-icon="facebook">face_nod</span>
-                            </Link>
-                            <Link className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
-                                <span className="material-symbols-outlined text-sm" data-icon="camera">camera</span>
-                            </Link>
-                            <Link className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
-                                <span className="material-symbols-outlined text-sm" data-icon="alternate_email">alternate_email</span>
-                            </Link>
+                        <div className="flex flex-wrap gap-3">
+                            <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-[#EE4D2D] hover:text-white hover:border-[#EE4D2D] transition-all duration-300 group" title="Shopee">
+                                <span className="material-symbols-outlined text-[18px] group-hover:scale-110 transition-transform">shopping_bag</span>
+                            </a>
+                            <a href="https://wa.me/message/YE44OXBSTECGN1" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 group" title="WhatsApp">
+                                <svg fill="currentColor" viewBox="0 0 24 24" className="w-[18px] h-[18px] group-hover:scale-110 transition-transform"><path d="M12.031 21c-1.636 0-3.222-.416-4.636-1.206l-5.114 1.34 1.365-4.981A8.956 8.956 0 012.43 12.04c0-4.962 4.04-9 9.006-9s9.006 4.038 9.006 9c0 4.963-4.04 9-9.005 9zm0-16.425C7.886 4.575 4.505 7.95 4.505 12.04c0 1.353.36 2.673 1.042 3.824l.11.185-.865 3.155 3.23-.846.177.105c1.11.66 2.38 1.008 3.682 1.008 4.143 0 7.525-3.375 7.525-7.465 0-4.092-3.382-7.466-7.525-7.466v.035zm4.12 9.878c-.226-.113-1.338-.66-1.545-.736-.207-.075-.357-.113-.508.113-.15.226-.583.736-.715.887-.132.15-.264.17-.49.056-.227-.113-.956-.352-1.82-1.123-.674-.6-1.13-1.342-1.263-1.568-.133-.226-.014-.348.1-.46.102-.102.226-.264.34-.396.113-.132.15-.226.226-.377.075-.15.038-.283-.018-.396-.056-.113-.508-1.225-.696-1.677-.183-.44-.37-.38-.507-.387-.132-.007-.282-.007-.433-.007-.15 0-.396.056-.603.282-.207.226-.79 .772-.79 1.882s.808 2.184.92 2.335c.113.15 1.59 2.428 3.85 3.404.538.232 1.02.365 1.368.468.54.16 1.03.138 1.417.084.434-.06 1.338-.546 1.526-1.074.188-.527.188-.978.132-1.074-.056-.094-.207-.15-.433-.264z" /></svg>
+                            </a>
+                            <a href="https://www.instagram.com/handmade.by.sarah__" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-[#E1306C] hover:text-white hover:border-[#E1306C] transition-all duration-300 group" title="Instagram">
+                                <svg fill="currentColor" viewBox="0 0 24 24" className="w-[18px] h-[18px] group-hover:scale-110 transition-transform"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" /></svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@sarahrahmania" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-all duration-300 group" title="TikTok">
+                                <svg fill="currentColor" viewBox="0 0 24 24" className="w-[18px] h-[18px] group-hover:scale-110 transition-transform"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z" /></svg>
+                            </a>
+                            <a href="https://youtube.com/@handmade.bysarah?si=LadV8lnorasNzLJv" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] transition-all duration-300 group" title="YouTube">
+                                <svg fill="currentColor" viewBox="0 0 24 24" className="w-[18px] h-[18px] group-hover:scale-110 transition-transform"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+                            </a>
                         </div>
                     </div>
                     <div className="space-y-6">
