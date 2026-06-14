@@ -8,7 +8,7 @@ export default function Home() {
             {/* TopNavBar */}
             <nav className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md">
                 <div className="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
-                    <Link className="font-headline-md text-headline-md font-bold text-primary" href="/">RajutKarya Indonesia</Link>
+                    <Link className="font-headline-md text-headline-md font-bold text-primary" href="/">Handmade By Sarah</Link>
                     <div className="hidden md:flex gap-8 items-center">
                         <Link className="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="#">Katalog</Link>
                         <Link className="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#">Kategori</Link>
@@ -115,7 +115,7 @@ export default function Home() {
                             </Link>
                             <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
-                                    <Image width={800} height={800} alt="Custom" className="w-full h-full object-cover rounded-xl" data-alt="A flat lay of colorful yarn skeins, crochet hooks, and a sketchpad, representing the endless possibilities of custom orders at RajutKarya." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNHvniu-QHmyqMxufxZ95ojZaAQjBdtaYaViDBiP8fpW-tZZXERIbNZgOV3gUUFVlVIfKz-BoikDs3rTnJnj2x1lYZv2SBhYuArtXa9IVQfD4nwKeolsv2n4fA30mNBLyqg7RjZpI0AKkH_yFXPuCSFuD1thrmLL2iCf5o6nVs5HLrqdM50W8nZ_iWivjDWQmdKesWPENMS6UWJA4rgbV7btG4GhlzwJbKRSekflY_4cpV_sLijES1VRw3bcBfjtuGHDcwroiOAKw" />
+                                    <Image width={800} height={800} alt="Custom" className="w-full h-full object-cover rounded-xl" data-alt="A flat lay of colorful yarn skeins, crochet hooks, and a sketchpad, representing the endless possibilities of custom orders at Handmade By Sarah." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNHvniu-QHmyqMxufxZ95ojZaAQjBdtaYaViDBiP8fpW-tZZXERIbNZgOV3gUUFVlVIfKz-BoikDs3rTnJnj2x1lYZv2SBhYuArtXa9IVQfD4nwKeolsv2n4fA30mNBLyqg7RjZpI0AKkH_yFXPuCSFuD1thrmLL2iCf5o6nVs5HLrqdM50W8nZ_iWivjDWQmdKesWPENMS6UWJA4rgbV7btG4GhlzwJbKRSekflY_4cpV_sLijES1VRw3bcBfjtuGHDcwroiOAKw" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Custom</h3>
                             </Link>
@@ -237,7 +237,7 @@ export default function Home() {
                         <div className="space-y-8">
                             <h2 className="font-headline-lg text-headline-lg">Lokal Craftmanship, Standar Global</h2>
                             <p className="font-body-lg text-on-surface-variant leading-relaxed">
-                                RajutKarya Indonesia berawal dari kecintaan terhadap seni rajut tradisional Nusantara. Kami memberdayakan perajin lokal untuk menciptakan produk modern yang tidak hanya estetik, tetapi juga memiliki ketahanan dan nilai seni tinggi.
+                                Handmade By Sarah berawal dari kecintaan terhadap seni rajut tradisional Nusantara. Kami memberdayakan perajin lokal untuk menciptakan produk modern yang tidak hanya estetik, tetapi juga memiliki ketahanan dan nilai seni tinggi.
                             </p>
                             <p className="font-body-md text-on-surface-variant leading-relaxed">
                                 Setiap produk kami melalui proses kurasi material yang ketat, menggunakan benang premium yang ramah lingkungan untuk memastikan kenyamanan dan kualitas terbaik di setiap simpulnya.
@@ -387,7 +387,7 @@ export default function Home() {
             <footer className="bg-surface-container-low py-20 px-margin-desktop">
                 <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
                     <div className="space-y-6">
-                        <Link className="font-headline-md text-headline-md text-primary block" href="#">RajutKarya Indonesia</Link>
+                        <Link className="font-headline-md text-headline-md text-primary block" href="#">Handmade By Sarah</Link>
                         <p className="text-body-sm text-on-surface-variant">Menghadirkan keindahan rajut tradisional dalam gaya hidup modern. Dibuat dengan cinta, simpul demi simpul.</p>
                         <div className="flex gap-4">
                             <Link className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
@@ -429,7 +429,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="max-w-container-max mx-auto mt-20 pt-8 border-t border-outline-variant text-center">
-                    <p className="text-body-sm text-on-surface-variant">© 2024 RajutKarya Indonesia. Crafting Indonesian Heritage.</p>
+                    <p className="text-body-sm text-on-surface-variant">© 2024 Handmade By Sarah. Crafting Indonesian Heritage.</p>
                 </div>
             </footer>
 

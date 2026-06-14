@@ -15,7 +15,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "RajutKarya Indonesia | Produk Rajut Handmade Berkualitas",
+  title: "Handmade By Sarah | Produk Rajut Handmade Berkualitas",
   description: "Setiap simpul benang adalah dedikasi. Kami menghadirkan karya rajut premium yang menggabungkan tradisi lokal dengan desain kontemporer.",
 };
 
