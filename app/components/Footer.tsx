@@ -28,17 +28,17 @@ export default function Footer() {
                 <div className="space-y-6">
                     <h4 className="font-bold text-secondary">Halaman</h4>
                     <div className="flex flex-col gap-3">
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="#">Tentang Kami</Link>
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="#">Produk Kami</Link>
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="#">Custom Order</Link>
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="#">Blog &amp; Inspirasi</Link>
+                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#tentang-kami">Tentang Kami</Link>
+                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#katalog">Produk Kami</Link>
+                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#custom">Custom Order</Link>
+                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#galeri">Blog &amp; Inspirasi</Link>
                     </div>
                 </div>
                 <div className="space-y-6">
                     <h4 className="font-bold text-secondary">Bantuan</h4>
                     <div className="flex flex-col gap-3">
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="#">FAQ</Link>
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="#">Cara Pemesanan</Link>
+                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/faq">FAQ</Link>
+                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/cara-pemesanan">Cara Pemesanan</Link>
                         <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/kebijakan-privasi">Kebijakan Privasi</Link>
                         <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/syarat-dan-ketentuan">Syarat &amp; Ketentuan</Link>
                     </div>
