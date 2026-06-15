@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
     const pathname = usePathname();
     const [activeSection, setActiveSection] = useState("beranda");
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const observerOptions = {
@@ -39,6 +40,7 @@ export default function Navbar() {
     ];
 
     const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, id: string) => {
+        setIsMobileMenuOpen(false); // Close menu when a link is clicked
         if (pathname === "/") {
             e.preventDefault();
             const element = document.getElementById(id);
@@ -81,8 +83,13 @@ export default function Navbar() {
                             <span className="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="person">person</span>
                         </a>
                     </div>
-                    <button className="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all duration-300 active:scale-95 shadow-sm">
-                        <span className="material-symbols-outlined text-[20px]" data-icon="menu">menu</span>
+                    <button 
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all duration-300 active:scale-95 shadow-sm"
+                    >
+                        <span className="material-symbols-outlined text-[20px]" data-icon={isMobileMenuOpen ? "close" : "menu"}>
+                            {isMobileMenuOpen ? "close" : "menu"}
+                        </span>
                     </button>
                     {/* Mobile specific icons - shown when sm is hidden */}
                     <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="sm:hidden w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 group relative">
@@ -90,6 +97,26 @@ export default function Navbar() {
                     </a>
                 </div>
             </nav>
+
+            {/* Mobile Menu Dropdown */}
+            {isMobileMenuOpen && (
+                <div className="pointer-events-auto mt-2 mx-auto max-w-7xl rounded-3xl bg-surface/95 backdrop-blur-xl border border-outline-variant/40 shadow-xl shadow-primary/10 p-4 flex flex-col gap-2 lg:hidden transition-all duration-300">
+                    {navLinks.map((link) => (
+                        <Link 
+                            key={link.id}
+                            className={`px-5 py-3 rounded-xl text-[16px] text-center transition-all duration-300 active:scale-95 ${
+                                activeSection === link.id 
+                                ? "bg-primary text-on-primary font-medium" 
+                                : "text-on-surface-variant font-medium hover:text-primary hover:bg-surface-container"
+                            }`} 
+                            href={link.href}
+                            onClick={(e) => handleNavClick(e, link.href, link.id)}
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
+                </div>
+            )}
         </div>
     );
 }
