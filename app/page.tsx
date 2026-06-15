@@ -494,8 +494,8 @@ export default function Home() {
                         <h2 className="font-headline-xl text-4xl md:text-5xl lg:text-6xl">Temukan Produk Rajut Handmade Favorit Anda Hari Ini</h2>
                         <p className="font-body-lg text-on-surface-variant">Miliki koleksi eksklusif kami dan rasakan sentuhan kehangatan karya Nusantara di setiap produknya.</p>
                         <div className="flex flex-wrap justify-center gap-6">
-                            <button className="bg-primary text-on-primary px-12 py-5 rounded-full font-bold hover:scale-105 transition-transform shadow-lg">Belanja Sekarang</button>
-                            <button className="bg-white border-2 border-primary text-primary px-12 py-5 rounded-full font-bold hover:bg-primary/5 transition-colors">Lihat Koleksi Terbaru</button>
+                            <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="bg-primary text-on-primary px-12 py-5 rounded-full font-bold hover:scale-105 transition-transform shadow-lg inline-block">Belanja Sekarang</a>
+                            <SmoothScrollLink href="/#katalog" className="bg-white border-2 border-primary text-primary px-12 py-5 rounded-full font-bold hover:bg-primary/5 transition-colors inline-block">Lihat Koleksi Terbaru</SmoothScrollLink>
                         </div>
                     </div>
                 </section>
