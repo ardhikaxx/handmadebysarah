@@ -36,6 +36,7 @@ export const metadata: Metadata = {
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HashRemover from "./components/HashRemover";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 export default function RootLayout({
   children,
@@ -79,6 +80,7 @@ export default function RootLayout({
         <div className="flex-1">
           {children}
         </div>
+        <FloatingWhatsApp />
         <Footer />
       </body>
     </html>

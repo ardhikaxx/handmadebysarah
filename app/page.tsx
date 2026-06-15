@@ -3,12 +3,15 @@ import Link from "next/link";
 import SmoothScrollLink from "./components/SmoothScrollLink";
 import InstagramEmbed from "./components/InstagramEmbed";
 import { embed1, embed2, embed3 } from "./components/InstagramHtml";
+import FadeIn from "./components/FadeIn";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
     return (
         <>
 
             <main className="pt-24 overflow-x-hidden">
+                <FadeIn delay={0.2} direction="up">
                 {/* Hero Section */}
                 <section id="beranda" className="px-margin-desktop py-10 md:py-16 lg:py-20 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                     <div className="space-y-8 text-center lg:text-left">
@@ -41,7 +44,9 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                </FadeIn>
                 {/* Kategori Produk */}
+                <FadeIn delay={0.2} direction="up">
                 <section id="kategori" className="bg-surface-container-low py-12 md:py-16 lg:py-24 px-margin-desktop">
                     <div className="max-w-container-max mx-auto">
                         <div className="text-center mb-16 space-y-4">
@@ -101,6 +106,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                </FadeIn>
                 {/* Produk Terlaris */}
                 <section id="katalog" className="py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 px-margin-desktop max-w-container-max mx-auto">
                     <div className="flex justify-between items-end mb-16">
@@ -490,6 +496,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                <Testimonials />
             </main>
         </>
     );
