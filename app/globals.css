@@ -100,6 +100,12 @@
   --text-headline-lg-mobile: 28px;
   --text-headline-lg-mobile--line-height: 36px;
   --text-headline-lg-mobile--font-weight: 600;
+
+  --animate-marquee: marquee 20s linear infinite;
+
+  @keyframes marquee {
+    to { transform: translateX(-33.333%); }
+  }
 }
 
 body {
@@ -138,13 +144,3 @@ body {
     --spacing-gutter: 24px;
   }
 }
-
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-33.333%); }
-}
-.animate-marquee {
-  animation: marquee 20s linear infinite;
-  width: max-content;
-}
-
