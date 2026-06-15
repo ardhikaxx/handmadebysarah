@@ -6,7 +6,7 @@ export const metadata = {
 export default function FAQPage() {
   return (
     <div className="bg-background min-h-screen">
-      <main className="pt-32 pb-24 px-margin-desktop max-w-3xl mx-auto">
+      <main className="pt-24 md:pt-32 pb-16 md:pb-24 px-margin-desktop max-w-3xl mx-auto">
         <div className="mb-12 text-center">
             <h1 className="font-headline-lg text-4xl lg:text-5xl text-primary mb-4">Frequently Asked Questions</h1>
             <p className="text-on-surface-variant font-body-lg">Temukan jawaban untuk pertanyaan umum seputar produk rajut kami.</p>
