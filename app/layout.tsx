@@ -35,6 +35,7 @@ export const metadata: Metadata = {
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import HashRemover from "./components/HashRemover";
 
 export default function RootLayout({
   children,
@@ -53,6 +54,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+        <HashRemover />
         <Navbar />
         <div className="flex-1">
           {children}
