@@ -7,16 +7,16 @@ export default function Home() {
 
             <main className="pt-24 overflow-x-hidden">
                 {/* Hero Section */}
-                <section id="beranda" className="px-margin-desktop py-20 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <div className="space-y-8">
-                        <span className="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider font-bold">Handmade By Sarah</span>
-                        <h1 className="font-headline-xl text-headline-xl text-on-background leading-tight">
-                            Produk Rajut Handmade Berkualitas dengan Sentuhan Kreativitas Nusantara
+                <section id="beranda" className="px-margin-desktop py-10 md:py-16 lg:py-20 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                    <div className="space-y-8 text-center lg:text-left">
+                        <span className="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider font-bold inline-block">Handmade By Sarah</span>
+                        <h1 className="font-headline-xl text-4xl md:text-5xl lg:text-6xl text-on-background leading-tight">
+                            Produk Rajut Handmade Berkualitas
                         </h1>
-                        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg mx-auto lg:mx-0">
                             Setiap simpul benang adalah dedikasi. Kami menghadirkan karya rajut premium yang menggabungkan tradisi lokal dengan desain kontemporer untuk gaya hidup modern Anda.
                         </p>
-                        <div className="flex flex-wrap gap-4">
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                             <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md font-bold hover:scale-105 transition-transform inline-block text-center">Belanja Sekarang</a>
                             <SmoothScrollLink href="/#katalog" className="border-1.5 border-primary text-primary px-8 py-4 rounded-full font-body-md font-bold hover:bg-primary/5 transition-colors border-2 inline-block text-center">Lihat Katalog</SmoothScrollLink>
                         </div>
@@ -39,7 +39,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Kategori Produk */}
-                <section id="kategori" className="bg-surface-container-low py-24 px-margin-desktop">
+                <section id="kategori" className="bg-surface-container-low py-12 md:py-16 lg:py-24 px-margin-desktop">
                     <div className="max-w-container-max mx-auto">
                         <div className="text-center mb-16 space-y-4">
                             <h2 className="font-headline-lg text-headline-lg text-on-background">Kategori Pilihan</h2>
@@ -99,7 +99,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Produk Terlaris */}
-                <section id="katalog" className="py-32 px-margin-desktop max-w-container-max mx-auto">
+                <section id="katalog" className="py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 px-margin-desktop max-w-container-max mx-auto">
                     <div className="flex justify-between items-end mb-16">
                         <div>
                             <h2 className="font-headline-lg text-headline-lg text-on-background">Produk Terlaris</h2>
@@ -345,7 +345,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Tentang Brand */}
-                <section id="tentang-kami" className="bg-surface py-32 px-margin-desktop overflow-hidden">
+                <section id="tentang-kami" className="bg-surface py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 px-margin-desktop overflow-hidden">
                     <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                         <div className="relative">
                             <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary-fixed rounded-full opacity-30 blur-3xl"></div>
@@ -354,7 +354,7 @@ export default function Home() {
                                 <p className="font-body-md italic text-primary">&quot;Kami percaya bahwa keindahan sejati lahir dari kesabaran dan keahlian tangan manusia.&quot;</p>
                             </div>
                         </div>
-                        <div className="space-y-8">
+                        <div className="space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
                             <h2 className="font-headline-lg text-headline-lg">Lokal Craftmanship, Standar Global</h2>
                             <p className="font-body-lg text-on-surface-variant leading-relaxed">
                                 Handmade By Sarah berawal dari kecintaan terhadap seni rajut tradisional Nusantara. Kami memberdayakan perajin lokal untuk menciptakan produk modern yang tidak hanya estetik, tetapi juga memiliki ketahanan dan nilai seni tinggi.
@@ -362,12 +362,12 @@ export default function Home() {
                             <p className="font-body-md text-on-surface-variant leading-relaxed">
                                 Setiap produk kami melalui proses kurasi material yang ketat, menggunakan benang premium yang ramah lingkungan untuk memastikan kenyamanan dan kualitas terbaik di setiap simpulnya.
                             </p>
-                            <div className="grid grid-cols-2 gap-8">
-                                <div className="flex items-start gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full justify-items-center lg:justify-items-start">
+                                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 text-center lg:text-left">
                                     <span className="material-symbols-outlined text-primary bg-primary-container/20 p-3 rounded-xl" data-icon="eco">eco</span>
                                     <div><h4 className="font-bold text-primary">Sustainable</h4><p className="text-sm">Bahan ramah lingkungan</p></div>
                                 </div>
-                                <div className="flex items-start gap-4">
+                                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 text-center lg:text-left">
                                     <span className="material-symbols-outlined text-primary bg-primary-container/20 p-3 rounded-xl" data-icon="brush">brush</span>
                                     <div><h4 className="font-bold text-primary">Unique Design</h4><p className="text-sm">Eksklusif &amp; Kreatif</p></div>
                                 </div>
@@ -376,7 +376,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Keunggulan */}
-                <section className="py-24 px-margin-desktop bg-surface-container-low">
+                <section className="py-12 md:py-16 lg:py-24 px-margin-desktop bg-surface-container-low">
                     <div className="max-w-container-max mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter">
                             <div className="bg-white p-10 rounded-2xl text-center space-y-4 soft-shadow hover:-translate-y-1 transition-transform">
@@ -403,9 +403,9 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Produk Custom */}
-                <section id="custom" className="py-32 px-margin-desktop">
-                    <div className="max-w-container-max mx-auto bg-secondary-container rounded-3xl p-12 lg:p-20 flex flex-col lg:flex-row items-center gap-16">
-                        <div className="lg:w-1/2 space-y-8">
+                <section id="custom" className="py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 px-margin-desktop">
+                    <div className="max-w-container-max mx-auto bg-secondary-container rounded-3xl p-12 lg:p-20 flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+                        <div className="lg:w-1/2 space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
                             <h2 className="font-headline-lg text-headline-lg text-on-secondary-container">Ingin Produk yang Lebih Personal?</h2>
                             <p className="font-body-lg text-on-secondary-container/80">Kami menerima pesanan custom sesuai keinginan Anda. Mulai dari warna, ukuran, hingga desain khusus untuk kado atau penggunaan pribadi.</p>
                             <a href="https://wa.me/message/YE44OXBSTECGN1" target="_blank" rel="noopener noreferrer" className="bg-primary text-on-primary px-10 py-5 rounded-full font-bold inline-flex items-center gap-3 hover:scale-105 transition-transform shadow-lg hover:shadow-primary/30 w-fit">
@@ -419,7 +419,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Galeri */}
-                <section id="galeri" className="py-32 px-margin-desktop bg-surface">
+                <section id="galeri" className="py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 px-margin-desktop bg-surface">
                     <div className="max-w-container-max mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="font-headline-lg text-headline-lg">Inspirasi Galeri</h2>
@@ -448,7 +448,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Video Showcase */}
-                <section className="py-32 bg-primary">
+                <section className="py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 bg-primary">
                     <div className="max-w-container-max mx-auto px-margin-desktop text-center text-on-primary">
                         <div className="mb-12">
                             <h2 className="font-headline-lg text-headline-lg mb-4">Seni Merajut</h2>
@@ -465,7 +465,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* FAQ */}
-                <section className="py-32 px-margin-desktop max-w-3xl mx-auto">
+                <section className="py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 px-margin-desktop max-w-3xl mx-auto">
                     <h2 className="font-headline-lg text-headline-lg text-center mb-16">Pertanyaan Sering Diajukan</h2>
                     <div className="space-y-4">
                         <details className="group bg-white rounded-2xl p-6 soft-shadow cursor-pointer">
@@ -492,9 +492,9 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Final CTA */}
-                <section className="py-32 px-margin-desktop bg-surface-container-low text-center">
+                <section className="py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 px-margin-desktop bg-surface-container-low text-center">
                     <div className="max-w-4xl mx-auto space-y-10">
-                        <h2 className="font-headline-xl text-headline-xl">Temukan Produk Rajut Handmade Favorit Anda Hari Ini</h2>
+                        <h2 className="font-headline-xl text-4xl md:text-5xl lg:text-6xl">Temukan Produk Rajut Handmade Favorit Anda Hari Ini</h2>
                         <p className="font-body-lg text-on-surface-variant">Miliki koleksi eksklusif kami dan rasakan sentuhan kehangatan karya Nusantara di setiap produknya.</p>
                         <div className="flex flex-wrap justify-center gap-6">
                             <button className="bg-primary text-on-primary px-12 py-5 rounded-full font-bold hover:scale-105 transition-transform shadow-lg">Belanja Sekarang</button>
