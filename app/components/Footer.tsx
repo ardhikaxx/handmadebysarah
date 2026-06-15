@@ -3,12 +3,12 @@ import SmoothScrollLink from "./SmoothScrollLink";
 
 export default function Footer() {
     return (
-        <footer className="bg-surface-container-low py-20 px-margin-desktop">
-            <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
-                <div className="space-y-6">
+        <footer className="bg-surface-container-low py-10 md:py-16 lg:py-20 px-margin-desktop">
+            <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 text-center md:text-left">
+                <div className="space-y-6 flex flex-col items-center md:items-start">
                     <Link className="font-headline-md text-headline-md text-primary block" href="/">Handmade By Sarah</Link>
                     <p className="text-body-sm text-on-surface-variant">Menghadirkan keindahan rajut tradisional dalam gaya hidup modern. Dibuat dengan cinta, simpul demi simpul.</p>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                         <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-[#EE4D2D] hover:text-white hover:border-[#EE4D2D] transition-all duration-300 group" title="Shopee">
                             <span className="material-symbols-outlined text-[18px] group-hover:scale-110 transition-transform">shopping_bag</span>
                         </a>
