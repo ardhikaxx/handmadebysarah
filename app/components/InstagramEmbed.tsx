@@ -1,0 +1,1 @@
+export default function InstagramEmbed({ html }: { html: string }) { return <div className="bg-white rounded-2xl soft-shadow p-4 overflow-hidden flex justify-center" dangerouslySetInnerHTML={{ __html: html }} />; }

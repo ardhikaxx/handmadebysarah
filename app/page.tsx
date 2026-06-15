@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import SmoothScrollLink from "./components/SmoothScrollLink";
+import InstagramEmbed from "./components/InstagramEmbed";
+import { embed1, embed2, embed3 } from "./components/InstagramHtml";
 
 export default function Home() {
     return (
@@ -425,25 +428,10 @@ export default function Home() {
                             <h2 className="font-headline-lg text-headline-lg">Inspirasi Galeri</h2>
                             <p className="text-on-surface-variant">Melihat lebih dekat setiap detail karya kami.</p>
                         </div>
-                        <div className="columns-1 sm:columns-2 lg:columns-3 gap-gutter space-y-gutter">
-                            <div className="relative group cursor-pointer overflow-hidden rounded-2xl">
-                                <Image width={800} height={800} alt="Gallery 1" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A high-detail close-up of an intricate crochet pattern on a luxury bag. The lighting is soft, highlighting the physical texture of the yarn." src="/assets/produk/produk5.jpg" />
-                                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                                    <span className="text-white font-bold">Detail Texture</span>
-                                </div>
-                            </div>
-                            <div className="relative group cursor-pointer overflow-hidden rounded-2xl">
-                                <Image width={800} height={800} alt="Gallery 2" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A beautiful handmade crochet bag displayed in a sunlit room, with long shadows creating a modern and calm aesthetic." src="/assets/produk/produk1.jpg" />
-                                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                                    <span className="text-white font-bold">Modern Style</span>
-                                </div>
-                            </div>
-                            <div className="relative group cursor-pointer overflow-hidden rounded-2xl">
-                                <Image width={800} height={800} alt="Gallery 3" className="w-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of a charming crochet amigurumi character, emphasizing the fine stitch work and soft pastel colors." src="/assets/produk/produk2.jpg" />
-                                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                                    <span className="text-white font-bold">Amigurumi Love</span>
-                                </div>
-                            </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter justify-items-center">
+                            <InstagramEmbed html={embed1} />
+                            <InstagramEmbed html={embed2} />
+                            <InstagramEmbed html={embed3} />
                         </div>
                     </div>
                 </section>
