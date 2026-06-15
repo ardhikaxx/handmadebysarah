@@ -49,10 +49,10 @@
   --color-surface-tint: #e28a9e;
   --color-surface-container-lowest: #ffffff;
 
-  --spacing-gutter: 24px;
+  --spacing-gutter: 16px;
   --spacing-container-max: 1280px;
   --spacing-base: 8px;
-  --spacing-margin-desktop: 64px;
+  --spacing-margin-desktop: 16px;
   --spacing-margin-mobile: 16px;
 
   --font-playfair: var(--font-playfair), serif;
@@ -123,4 +123,18 @@ body {
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --spacing-margin-desktop: 32px;
+    --spacing-gutter: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --spacing-margin-desktop: 64px;
+    --spacing-gutter: 24px;
+  }
 }
