@@ -16,7 +16,7 @@ export default function LoadingScreen() {
   }, []);
 
   // Animasi teks per huruf
-  const text = "MERAPIKAN BENANG...";
+  const text = "Merapikan benang...";
   const letters = Array.from(text);
 
   const container = {
@@ -121,7 +121,7 @@ export default function LoadingScreen() {
                 <motion.span
                   key={index}
                   variants={child}
-                  className="font-display text-lg sm:text-xl font-bold text-on-surface tracking-widest uppercase"
+                  className="font-serif text-xl sm:text-2xl text-primary italic font-medium tracking-wide"
                 >
                   {letter === " " ? "\u00A0" : letter}
                 </motion.span>
