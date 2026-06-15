@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import SmoothScrollLink from "./components/SmoothScrollLink";
 import InstagramEmbed from "./components/InstagramEmbed";
 import { embed1, embed2, embed3 } from "./components/InstagramHtml";
