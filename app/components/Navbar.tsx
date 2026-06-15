@@ -53,17 +53,23 @@ export default function Navbar() {
     return (
         <div className="fixed top-0 w-full z-50 pointer-events-none">
             {/* Announcement Bar */}
-            <div className="pointer-events-auto bg-primary text-on-primary text-[13px] font-medium py-2 overflow-hidden flex whitespace-nowrap">
-                <div className="animate-marquee flex gap-12 items-center">
-                    <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
-                    <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
-                    <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
-                    <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
-                    <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
-                    <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
-                    <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
-                    <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
-                    <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
+            <div className="pointer-events-auto bg-primary text-on-primary text-[13px] font-medium py-2 overflow-hidden whitespace-nowrap block">
+                <div className="animate-marquee inline-flex shrink-0 min-w-max">
+                    <div className="flex gap-12 items-center pr-12">
+                        <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
+                        <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
+                        <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
+                    </div>
+                    <div className="flex gap-12 items-center pr-12">
+                        <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
+                        <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
+                        <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
+                    </div>
+                    <div className="flex gap-12 items-center pr-12">
+                        <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
+                        <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
+                        <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
+                    </div>
                 </div>
             </div>
 
