@@ -40,6 +40,7 @@ import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollToTop from "./components/ScrollToTop";
 import CustomCursor from "./components/CustomCursor";
 import LoadingScreen from "./components/LoadingScreen";
+import ParticlesBackground from "./components/ParticlesBackground";
 
 export default function RootLayout({
   children,
@@ -59,6 +60,7 @@ export default function RootLayout({
         <script async src="//www.instagram.com/embed.js"></script>
       </head>
       <body className="font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+        <ParticlesBackground />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
