@@ -7,13 +7,34 @@ export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Sembunyikan loading screen setelah 2 detik
+    // Sembunyikan loading screen setelah 2.5 detik agar animasinya puas terlihat
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
+
+  // Animasi teks per huruf
+  const text = "MERAPIKAN BENANG...";
+  const letters = Array.from(text);
+
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.05, delayChildren: 0.2 },
+    },
+  };
+
+  const child = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring" as const, damping: 12, stiffness: 200 },
+    },
+  };
 
   return (
     <AnimatePresence>
@@ -21,54 +42,90 @@ export default function LoadingScreen() {
         <motion.div
           key="loading-screen"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, filter: "blur(10px)" }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="fixed inset-0 z-[100000] flex flex-col items-center justify-center bg-white/95 backdrop-blur-md"
+          exit={{ 
+            opacity: 0, 
+            y: "-100%", 
+            borderBottomLeftRadius: "50%", 
+            borderBottomRightRadius: "50%" 
+          }}
+          transition={{ duration: 0.8, ease: [0.65, 0, 0.35, 1] }}
+          className="fixed inset-0 z-[100000] flex flex-col items-center justify-center bg-surface overflow-hidden"
         >
-          <div className="relative flex flex-col items-center">
-            {/* Animasi Jarum Rajut */}
-            <motion.img
-              src="/assets/needle.png"
-              alt="Handmade by Sarah Loading"
-              className="w-24 h-24 mb-6 drop-shadow-lg"
+          {/* Latar Belakang Dekoratif berdenyut */}
+          <motion.div 
+            className="absolute inset-0 bg-gradient-to-tr from-primary-container/40 to-transparent"
+            animate={{ opacity: [0.3, 0.6, 0.3] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          />
+
+          <div className="relative flex flex-col items-center z-10">
+            {/* Animasi Jarum Rajut Menjahit dan Melompat */}
+            <motion.div
               animate={{
-                y: [0, -20, 0],
-                rotate: [0, 15, -15, 0],
-                scale: [1, 1.1, 1]
+                y: [0, -30, 10, -10, 0],
+                x: [-20, 0, 20, 0, -20],
+                rotate: [-20, 30, -10, 10, -20],
               }}
               transition={{
-                duration: 1.2,
+                duration: 2,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-            />
-            
-            {/* Teks Loading */}
-            <motion.div
-              className="flex items-center gap-1"
-              animate={{ opacity: [0.6, 1, 0.6] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              className="z-20 relative"
             >
-              <h2 className="font-display text-xl sm:text-2xl font-bold text-primary tracking-widest uppercase">
-                Merapikan Benang
-              </h2>
-              <div className="flex gap-1 ml-1">
-                <motion.div 
-                  className="w-1.5 h-1.5 bg-primary rounded-full"
-                  animate={{ y: [0, -5, 0] }} 
-                  transition={{ duration: 0.6, repeat: Infinity, delay: 0 }}
+              <img
+                src="/assets/needle.png"
+                alt="Jarum Rajut"
+                className="w-28 h-28 drop-shadow-2xl object-contain"
+              />
+            </motion.div>
+
+            {/* Animasi Jalur Benang (SVG) yang seolah-olah dirajut */}
+            <div className="w-48 h-12 -mt-8 mb-4 relative z-10 flex justify-center text-primary">
+              <svg viewBox="0 0 200 50" className="w-full h-full overflow-visible">
+                {/* Bayangan Benang */}
+                <motion.path
+                  d="M 10 25 C 40 -15, 60 65, 100 25 C 140 -15, 160 65, 190 25"
+                  fill="transparent"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  className="opacity-20"
                 />
-                <motion.div 
-                  className="w-1.5 h-1.5 bg-primary rounded-full"
-                  animate={{ y: [0, -5, 0] }} 
-                  transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }}
+                {/* Benang Utama yang digambar */}
+                <motion.path
+                  d="M 10 25 C 40 -15, 60 65, 100 25 C 140 -15, 160 65, 190 25"
+                  fill="transparent"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
                 />
-                <motion.div 
-                  className="w-1.5 h-1.5 bg-primary rounded-full"
-                  animate={{ y: [0, -5, 0] }} 
-                  transition={{ duration: 0.6, repeat: Infinity, delay: 0.4 }}
-                />
-              </div>
+              </svg>
+            </div>
+            
+            {/* Teks Loading Per Huruf yang Elegan */}
+            <motion.div
+              variants={container}
+              initial="hidden"
+              animate="visible"
+              className="flex mt-2"
+            >
+              {letters.map((letter, index) => (
+                <motion.span
+                  key={index}
+                  variants={child}
+                  className="font-display text-lg sm:text-xl font-bold text-on-surface tracking-widest uppercase"
+                >
+                  {letter === " " ? "\u00A0" : letter}
+                </motion.span>
+              ))}
             </motion.div>
           </div>
         </motion.div>
