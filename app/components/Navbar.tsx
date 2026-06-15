@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+    const pathname = usePathname();
     const [activeSection, setActiveSection] = useState("beranda");
 
     useEffect(() => {
@@ -36,6 +38,16 @@ export default function Navbar() {
         { name: "Galeri", href: "/#galeri", id: "galeri" },
     ];
 
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, id: string) => {
+        if (pathname === "/") {
+            e.preventDefault();
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    };
+
     return (
         <div className="fixed top-0 w-full z-50 px-4 sm:px-8 pt-4 sm:pt-6 pointer-events-none">
             <nav className="pointer-events-auto mx-auto max-w-7xl rounded-full bg-surface/80 backdrop-blur-xl border border-outline-variant/40 shadow-xl shadow-primary/5 px-4 sm:px-6 py-3 flex justify-between items-center transition-all duration-300">
@@ -53,6 +65,7 @@ export default function Navbar() {
                                 : "text-on-surface-variant font-medium hover:text-primary hover:bg-surface-container/50"
                             }`} 
                             href={link.href}
+                            onClick={(e) => handleNavClick(e, link.href, link.id)}
                         >
                             {link.name}
                         </Link>
