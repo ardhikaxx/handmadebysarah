@@ -67,17 +67,7 @@ export default function CustomCursor() {
           mass: 0.1
         }}
       >
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Bola Benang */}
-          <circle cx="10" cy="10" r="8" fill="currentColor" />
-          {/* Detail Serat Benang */}
-          <path d="M6 7C8 8 12 6 14 7" stroke="white" strokeWidth="1" strokeLinecap="round" opacity="0.6" />
-          <path d="M5 10C8 11 12 9 15 10" stroke="white" strokeWidth="1" strokeLinecap="round" opacity="0.6" />
-          <path d="M6 13C8 14 12 12 14 13" stroke="white" strokeWidth="1" strokeLinecap="round" opacity="0.6" />
-          {/* Jarum Rajut / Ujung Benang yang terurai */}
-          <path d="M15 15C18 18 20 20 22 22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-          <path d="M22 22C20.5 22 19 22.5 18 23" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-        </svg>
+        <img src="/assets/needle.png" alt="" className="w-8 h-8 pointer-events-none" />
       </motion.div>
     </>
   );
