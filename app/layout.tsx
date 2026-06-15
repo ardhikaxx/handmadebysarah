@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Handmade By Sarah | Produk Rajut Premium",
     description: "Koleksi kerajinan rajut eksklusif, mulai dari boneka amigurumi lucu, tas, hingga aksesoris unik. Bisa custom sesuai permintaan!",
-    url: "https://handmadebysarah.com",
+    url: "https://handmadebysarah.vercel.app",
     siteName: "Handmade By Sarah",
     locale: "id_ID",
     type: "website",
@@ -63,9 +63,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Handmade By Sarah",
-              image: "https://handmadebysarah.com/assets/hero-bg.jpg",
+              image: "https://handmadebysarah.vercel.app/assets/hero-bg.jpg",
               description: "Pusat Produk Rajut Premium & Boneka Amigurumi. Melayani pesanan custom.",
-              url: "https://handmadebysarah.com",
+              url: "https://handmadebysarah.vercel.app",
               telephone: "+6281234567890", // Ganti dengan nomor WhatsApp asli
               priceRange: "Rp",
               address: {

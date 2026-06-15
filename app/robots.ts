@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://handmadebysarah.com/sitemap.xml",
+    sitemap: "https://handmadebysarah.vercel.app/sitemap.xml",
   };
 }
