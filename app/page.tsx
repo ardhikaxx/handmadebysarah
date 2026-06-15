@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import SmoothScrollLink from "./components/SmoothScrollLink";
 
 export default function Home() {
     return (
@@ -18,7 +18,7 @@ export default function Home() {
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="bg-primary text-on-primary px-8 py-4 rounded-full font-body-md font-bold hover:scale-105 transition-transform inline-block text-center">Belanja Sekarang</a>
-                            <button className="border-1.5 border-primary text-primary px-8 py-4 rounded-full font-body-md font-bold hover:bg-primary/5 transition-colors border-2">Lihat Katalog</button>
+                            <SmoothScrollLink href="/#katalog" className="border-1.5 border-primary text-primary px-8 py-4 rounded-full font-body-md font-bold hover:bg-primary/5 transition-colors border-2 inline-block text-center">Lihat Katalog</SmoothScrollLink>
                         </div>
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-8">
                             <div><div className="font-headline-md text-headline-md text-primary">5k+</div><div className="font-label-md text-label-md text-on-surface-variant">Produk Terjual</div></div>
@@ -47,54 +47,54 @@ export default function Home() {
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
                             {/* Category Card Template */}
-                            <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
+                            <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
                                     <Image width={800} height={800} alt="Totebag" className="w-full h-full object-cover rounded-xl" data-alt="A boutique-style crochet tote bag with a minimalist design, displayed on a clean white pedestal. The lighting is high-key and soft, emphasizing the natural fibers of the yarn and the sophisticated craft." src="/assets/produk/produk5.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Totebag</h3>
-                            </Link>
-                            <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
+                            </SmoothScrollLink>
+                            <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
                                     <Image width={800} height={800} alt="Topi" className="w-full h-full object-cover rounded-xl" data-alt="A stylish, hand-knit summer hat in light sand color, resting on a white wooden table next to a sprig of dried lavender. The aesthetic is modern artisanal and serene." src="/assets/produk/produk1.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Topi</h3>
-                            </Link>
-                            <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
+                            </SmoothScrollLink>
+                            <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
                                     <Image width={800} height={800} alt="Amigurumi" className="w-full h-full object-cover rounded-xl" data-alt="A charming set of miniature crochet amigurumi animals in soft pastel colors, perfectly arranged against a minimalist cream background." src="/assets/produk/produk2.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Amigurumi</h3>
-                            </Link>
-                            <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
+                            </SmoothScrollLink>
+                            <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
                                     <Image width={800} height={800} alt="Dompet" className="w-full h-full object-cover rounded-xl" data-alt="A small, elegant crochet coin purse with a vintage metal clasp, handmade with precision. The color is a soft caramel brown." src="/assets/produk/produk3.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Dompet</h3>
-                            </Link>
-                            <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
+                            </SmoothScrollLink>
+                            <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
                                     <Image width={800} height={800} alt="Tas" className="w-full h-full object-cover rounded-xl" data-alt="A premium crochet handbag with a sophisticated wooden handle, showcasing exquisite Indonesian craftsmanship in a luxury retail setting." src="/assets/produk/produk4.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Tas</h3>
-                            </Link>
-                            <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
+                            </SmoothScrollLink>
+                            <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
                                     <Image width={800} height={800} alt="Aksesoris" className="w-full h-full object-cover rounded-xl" data-alt="Detailed close-up of crochet hair accessories and earrings, featuring delicate floral patterns and soft-toned threads." src="/assets/produk/produk5.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Aksesoris</h3>
-                            </Link>
-                            <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
+                            </SmoothScrollLink>
+                            <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
                                     <Image width={800} height={800} alt="Dekorasi" className="w-full h-full object-cover rounded-xl" data-alt="A minimalist living room with a beautiful handmade crochet wall hanging and coasters, creating a cozy and organic home atmosphere." src="/assets/produk/produk1.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Dekorasi Rumah</h3>
-                            </Link>
-                            <Link className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="#">
+                            </SmoothScrollLink>
+                            <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
                                     <Image width={800} height={800} alt="Custom" className="w-full h-full object-cover rounded-xl" data-alt="A flat lay of colorful yarn skeins, crochet hooks, and a sketchpad, representing the endless possibilities of custom orders at Handmade By Sarah." src="/assets/produk/produk2.jpg" />
                                 </div>
                                 <h3 className="font-headline-md text-headline-md group-hover:text-primary">Custom</h3>
-                            </Link>
+                            </SmoothScrollLink>
                         </div>
                     </div>
                 </section>
