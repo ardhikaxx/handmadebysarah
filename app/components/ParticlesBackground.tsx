@@ -9,7 +9,7 @@ export default function ParticlesBackground() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", { alpha: true });
     if (!ctx) return;
 
     let particlesArray: Particle[] = [];
@@ -23,106 +23,99 @@ export default function ParticlesBackground() {
     window.addEventListener("resize", setCanvasSize);
     setCanvasSize();
 
-    const mouse = {
-      x: null as number | null,
-      y: null as number | null,
-      radius: 150,
-    };
-
-    const handleMouseMove = (e: MouseEvent) => {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-    };
-
-    const handleMouseOut = () => {
-      mouse.x = null;
-      mouse.y = null;
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseout", handleMouseOut);
-
-    // Palet warna ajaib: Emas lembut, krem, cokelat muda
-    const colors = ["#d4af37", "#f5deb3", "#deb887", "#fff8dc", "#faebd7"];
+    // Palet warna estetik sesuai tema (Rajutan/Krem/Cokelat/Peach/Warm White)
+    // rgba strings agar bisa kita atur opacity secara independen
+    const colors = [
+      "210, 180, 140", // Tan
+      "222, 184, 135", // Burlywood
+      "245, 245, 220", // Beige
+      "255, 228, 196", // Bisque
+      "250, 235, 215", // AntiqueWhite
+      "255, 250, 240", // FloralWhite
+      "205, 133, 63",  // Peru (aksen kecokelatan)
+    ];
 
     class Particle {
       x: number;
       y: number;
       size: number;
-      baseX: number;
-      baseY: number;
-      density: number;
-      color: string;
-      speedX: number;
+      colorStr: string;
       speedY: number;
-      angle: number;
-      angleSpeed: number;
+      speedX: number;
+      opacity: number;
+      opacitySpeed: number;
+      maxOpacity: number;
+      phase: number; // untuk pergerakan organik (sin wave)
 
       constructor(x: number, y: number) {
         this.x = x;
         this.y = y;
-        this.baseX = x;
-        this.baseY = y;
-        this.size = Math.random() * 2 + 1;
-        this.density = Math.random() * 30 + 1;
-        this.color = colors[Math.floor(Math.random() * colors.length)];
-        this.speedX = Math.random() * 0.5 - 0.25;
-        this.speedY = Math.random() * 0.5 - 0.25;
-        this.angle = Math.random() * 360;
-        this.angleSpeed = Math.random() * 0.02 - 0.01;
-      }
+        // Ukuran partikel sangat bervariasi: ada debu sangat kecil, ada bola bokeh yang agak besar
+        this.size = Math.random() * 4 + 0.5;
+        if (Math.random() > 0.95) this.size = Math.random() * 8 + 4; // 5% partikel besar (bokeh)
 
-      draw() {
-        if (!ctx) return;
-        // Efek bercahaya
-        ctx.shadowBlur = 15;
-        ctx.shadowColor = this.color;
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.fill();
-        // Reset shadow untuk performa
-        ctx.shadowBlur = 0;
+        this.colorStr = colors[Math.floor(Math.random() * colors.length)];
+        
+        // Pergerakan melayang sangat lambat ke atas (seperti debu melawan gravitasi halus)
+        this.speedY = Math.random() * -0.3 - 0.1; 
+        this.speedX = Math.random() * 0.2 - 0.1;
+        
+        // Pendaran (Opacity pulsing)
+        this.maxOpacity = Math.random() * 0.5 + 0.3; // max opacity 0.3 - 0.8
+        this.opacity = Math.random() * this.maxOpacity;
+        this.opacitySpeed = Math.random() * 0.005 + 0.002;
+        
+        this.phase = Math.random() * Math.PI * 2;
       }
 
       update() {
         if (!canvas) return;
 
-        // Ayunan melayang menggunakan sinus & kosinus agar organik
-        this.angle += this.angleSpeed;
-        this.x += this.speedX + Math.sin(this.angle) * 0.3;
-        this.y += this.speedY + Math.cos(this.angle) * 0.3;
+        // Gerak organik menyamping
+        this.phase += 0.01;
+        this.x += this.speedX + Math.sin(this.phase) * 0.1;
+        this.y += this.speedY;
 
-        // Muncul dari sisi berlawanan bila keluar layar
-        if (this.x > canvas.width) this.x = 0;
-        if (this.x < 0) this.x = canvas.width;
-        if (this.y > canvas.height) this.y = 0;
-        if (this.y < 0) this.y = canvas.height;
-
-        // Menyingkir halus saat didekati mouse
-        if (mouse.x != null && mouse.y != null) {
-          const dx = mouse.x - this.x;
-          const dy = mouse.y - this.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-
-          if (distance < mouse.radius) {
-            const forceDirectionX = dx / distance;
-            const forceDirectionY = dy / distance;
-            const force = (mouse.radius - distance) / mouse.radius;
-            const directionX = forceDirectionX * force * this.density * 0.1;
-            const directionY = forceDirectionY * force * this.density * 0.1;
-
-            this.x -= directionX;
-            this.y -= directionY;
-          }
+        // Pulsasi cahaya (fade in / out berkelanjutan)
+        this.opacity += this.opacitySpeed;
+        if (this.opacity >= this.maxOpacity || this.opacity <= 0.05) {
+          this.opacitySpeed = -this.opacitySpeed;
         }
+
+        // Reset partikel jika sudah melewati layar atas
+        if (this.y < -this.size) {
+          this.y = canvas.height + this.size;
+          this.x = Math.random() * canvas.width;
+          this.opacity = 0.05; // mulai dari pudar
+          this.opacitySpeed = Math.abs(this.opacitySpeed);
+        }
+        if (this.x > canvas.width + this.size) this.x = -this.size;
+        if (this.x < -this.size) this.x = canvas.width + this.size;
+      }
+
+      draw() {
+        if (!ctx) return;
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, this.opacity); // Hindari alpha negatif
+        
+        // Efek bercahaya / Bokeh (Radial Gradient)
+        const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
+        gradient.addColorStop(0, `rgba(${this.colorStr}, 1)`);
+        gradient.addColorStop(0.4, `rgba(${this.colorStr}, 0.6)`);
+        gradient.addColorStop(1, `rgba(${this.colorStr}, 0)`);
+
+        ctx.fillStyle = gradient;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
       }
     }
 
     const init = () => {
       particlesArray = [];
-      const numberOfParticles = Math.floor((canvas.width * canvas.height) / 10000);
+      // Jangan terlalu padat agar terlihat mewah dan estetik, tidak sumpek
+      const numberOfParticles = Math.floor((canvas.width * canvas.height) / 12000);
       for (let i = 0; i < numberOfParticles; i++) {
         const x = Math.random() * canvas.width;
         const y = Math.random() * canvas.height;
@@ -130,40 +123,15 @@ export default function ParticlesBackground() {
       }
     };
 
-    // Menggambar "Benang Ajaib" (garis) di antara partikel yang berdekatan
-    const connect = () => {
-      if (!ctx) return;
-      let opacityValue = 1;
-      for (let a = 0; a < particlesArray.length; a++) {
-        for (let b = a; b < particlesArray.length; b++) {
-          const dx = particlesArray[a].x - particlesArray[b].x;
-          const dy = particlesArray[a].y - particlesArray[b].y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-
-          if (distance < 120) {
-            opacityValue = 1 - distance / 120;
-            ctx.strokeStyle = `rgba(212, 175, 55, ${opacityValue * 0.2})`; // Emas pudar
-            ctx.lineWidth = 0.5;
-            ctx.beginPath();
-            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-            ctx.stroke();
-          }
-        }
-      }
-    };
-
     const animate = () => {
       if (!ctx || !canvas) return;
-      // Gunakan fillRect semi-transparan untuk efek jejak (trails)
-      ctx.fillStyle = "rgba(255, 251, 245, 0.2)"; // Warna surface web, sesuaikan jika perlu
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      // Gunakan clearRect sepenuhnya agar background asli website tetap terlihat utuh
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
       
       for (let i = 0; i < particlesArray.length; i++) {
         particlesArray[i].update();
         particlesArray[i].draw();
       }
-      connect();
       animationFrameId = requestAnimationFrame(animate);
     };
 
@@ -172,8 +140,6 @@ export default function ParticlesBackground() {
 
     return () => {
       window.removeEventListener("resize", setCanvasSize);
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseout", handleMouseOut);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
@@ -181,7 +147,8 @@ export default function ParticlesBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-[1] opacity-70 mix-blend-multiply"
+      className="fixed inset-0 pointer-events-none z-[0] opacity-80"
+      style={{ background: 'transparent' }}
     />
   );
 }
