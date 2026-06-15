@@ -38,6 +38,7 @@ import Footer from "./components/Footer";
 import HashRemover from "./components/HashRemover";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollToTop from "./components/ScrollToTop";
+import CustomCursor from "./components/CustomCursor";
 
 export default function RootLayout({
   children,
@@ -83,6 +84,7 @@ export default function RootLayout({
         </div>
         <FloatingWhatsApp />
         <ScrollToTop />
+        <CustomCursor />
         <Footer />
       </body>
     </html>
