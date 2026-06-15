@@ -3,9 +3,12 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useLanguage } from "../context/LanguageContext";
+import LanguageToggle from "./LanguageToggle";
 
 export default function Navbar() {
     const pathname = usePathname();
+    const { t } = useLanguage();
     const [activeSection, setActiveSection] = useState("beranda");
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -31,12 +34,12 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { name: "Beranda", href: "/#beranda", id: "beranda" },
-        { name: "Kategori", href: "/#kategori", id: "kategori" },
-        { name: "Katalog", href: "/#katalog", id: "katalog" },
-        { name: "Tentang Kami", href: "/#tentang-kami", id: "tentang-kami" },
-        { name: "Custom", href: "/#custom", id: "custom" },
-        { name: "Galeri", href: "/#galeri", id: "galeri" },
+        { name: t("beranda"), href: "/#beranda", id: "beranda" },
+        { name: t("kategori"), href: "/#kategori", id: "kategori" },
+        { name: t("katalog"), href: "/#katalog", id: "katalog" },
+        { name: t("tentangKami"), href: "/#tentang-kami", id: "tentang-kami" },
+        { name: t("custom"), href: "/#custom", id: "custom" },
+        { name: t("galeri"), href: "/#galeri", id: "galeri" },
     ];
 
     const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, id: string) => {
@@ -85,6 +88,9 @@ export default function Navbar() {
                             <span className="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform" data-icon="person">person</span>
                         </a>
                     </div>
+                    <div className="hidden sm:block mr-2">
+                        <LanguageToggle />
+                    </div>
                     <button 
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all duration-300 active:scale-95 shadow-sm"
@@ -99,10 +105,18 @@ export default function Navbar() {
                     </a>
                 </div>
             </nav>
+            </div>
 
             {/* Mobile Menu Dropdown */}
-            {isMobileMenuOpen && (
-                <div className="pointer-events-auto mt-2 mx-auto max-w-7xl rounded-3xl bg-surface/95 backdrop-blur-xl border border-outline-variant/40 shadow-xl shadow-primary/10 p-4 flex flex-col gap-2 lg:hidden transition-all duration-300">
+            <div 
+                className={`pointer-events-auto absolute top-full left-0 w-full bg-surface/95 backdrop-blur-xl border-b border-outline-variant/30 shadow-lg transition-all duration-300 origin-top overflow-hidden
+                ${isMobileMenuOpen ? "max-h-[400px] opacity-100 py-4" : "max-h-0 opacity-0 py-0"}`}
+            >
+                <div className="flex flex-col px-6 gap-2">
+                    <div className="mb-2 pb-2 border-b border-outline-variant/30 flex justify-between items-center">
+                        <span className="text-sm font-medium text-on-surface-variant">Bahasa / Language</span>
+                        <LanguageToggle />
+                    </div>
                     {navLinks.map((link) => (
                         <Link 
                             key={link.id}
@@ -118,7 +132,6 @@ export default function Navbar() {
                         </Link>
                     ))}
                 </div>
-            )}
             </div>
         </div>
             
