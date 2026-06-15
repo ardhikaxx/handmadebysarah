@@ -55,6 +55,25 @@ export default function RootLayout({
         <script async src="//www.instagram.com/embed.js"></script>
       </head>
       <body className="font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Handmade By Sarah",
+              image: "https://handmadebysarah.com/assets/hero-bg.jpg",
+              description: "Pusat Produk Rajut Premium & Boneka Amigurumi. Melayani pesanan custom.",
+              url: "https://handmadebysarah.com",
+              telephone: "+6281234567890", // Ganti dengan nomor WhatsApp asli
+              priceRange: "Rp",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "ID"
+              }
+            })
+          }}
+        />
         <HashRemover />
         <Navbar />
         <div className="flex-1">
