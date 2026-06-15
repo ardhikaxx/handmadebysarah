@@ -120,8 +120,9 @@ export default function Navbar() {
                 </div>
             )}
             </div>
+        </div>
             
-            {/* Announcement Bar at Bottom */}
+        {/* Announcement Bar at Bottom */}
             <div className="fixed bottom-0 w-full z-50 pointer-events-auto bg-primary text-on-primary text-[13px] font-medium py-2 overflow-hidden whitespace-nowrap block">
                 <div className="animate-marquee inline-flex shrink-0 min-w-max">
                     <div className="flex gap-12 items-center pr-12">
