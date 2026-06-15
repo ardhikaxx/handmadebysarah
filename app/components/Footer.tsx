@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SmoothScrollLink from "./SmoothScrollLink";
 
 export default function Footer() {
     return (
@@ -28,10 +29,10 @@ export default function Footer() {
                 <div className="space-y-6">
                     <h4 className="font-bold text-secondary">Halaman</h4>
                     <div className="flex flex-col gap-3">
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#tentang-kami">Tentang Kami</Link>
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#katalog">Produk Kami</Link>
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#custom">Custom Order</Link>
-                        <Link className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#galeri">Blog &amp; Inspirasi</Link>
+                        <SmoothScrollLink className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#tentang-kami">Tentang Kami</SmoothScrollLink>
+                        <SmoothScrollLink className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#katalog">Produk Kami</SmoothScrollLink>
+                        <SmoothScrollLink className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#custom">Custom Order</SmoothScrollLink>
+                        <SmoothScrollLink className="text-body-sm text-on-surface-variant hover:underline decoration-primary-container underline-offset-4" href="/#galeri">Blog &amp; Inspirasi</SmoothScrollLink>
                     </div>
                 </div>
                 <div className="space-y-6">
