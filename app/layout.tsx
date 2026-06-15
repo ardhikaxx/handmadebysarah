@@ -37,7 +37,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HashRemover from "./components/HashRemover";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
-import PromoPopup from "./components/PromoPopup";
 
 export default function RootLayout({
   children,
@@ -83,7 +82,6 @@ export default function RootLayout({
         </div>
         <FloatingWhatsApp />
         <Footer />
-        <PromoPopup />
       </body>
     </html>
   );
