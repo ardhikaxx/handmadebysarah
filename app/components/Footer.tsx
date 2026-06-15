@@ -53,7 +53,7 @@ export default function Footer() {
                     </form>
                 </div>
             </div>
-            <div className="max-w-container-max mx-auto mt-20 pt-8 border-t border-outline-variant text-center">
+            <div className="max-w-container-max mx-auto mt-20 pt-8 pb-10 border-t border-outline-variant text-center">
                 <p className="text-body-sm text-on-surface-variant">© 2024 Handmade By Sarah. Crafting Indonesian Heritage.</p>
             </div>
         </footer>
