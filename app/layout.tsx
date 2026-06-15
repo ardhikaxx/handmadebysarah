@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   description: "Setiap simpul benang adalah dedikasi. Kami menghadirkan karya rajut premium yang menggabungkan tradisi lokal dengan desain kontemporer.",
 };
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,7 +39,11 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
-        {children}
+        <Navbar />
+        <div className="flex-1">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
