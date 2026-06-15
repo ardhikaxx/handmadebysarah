@@ -4,6 +4,9 @@ import SmoothScrollLink from "./components/SmoothScrollLink";
 import InstagramEmbed from "./components/InstagramEmbed";
 import { embed1, embed2, embed3 } from "./components/InstagramHtml";
 import FadeIn from "./components/FadeIn";
+import OrderSteps from "./components/OrderSteps";
+import FaqHome from "./components/FaqHome";
+import CallToAction from "./components/CallToAction";
 
 export default function Home() {
     return (
@@ -352,6 +355,8 @@ export default function Home() {
                         </a>
                     </div>
                 </section>
+                {/* Alur Cara Pesan */}
+                <OrderSteps />
                 {/* Tentang Brand */}
                 <section id="tentang-kami" className="bg-surface py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 px-margin-desktop overflow-hidden">
                     <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
@@ -495,6 +500,10 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                {/* FAQ Singkat */}
+                <FaqHome />
+                {/* Banner Call to Action */}
+                <CallToAction />
             </main>
         </>
     );
