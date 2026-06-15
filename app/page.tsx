@@ -6,7 +6,6 @@ import FadeIn from "./components/FadeIn";
 import OrderSteps from "./components/OrderSteps";
 import FaqHome from "./components/FaqHome";
 import CallToAction from "./components/CallToAction";
-import CustomerMap from "./components/CustomerMap";
 
 export default function Home() {
     return (
@@ -445,8 +444,6 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                {/* Peta Persebaran Pelanggan */}
-                <CustomerMap />
                 {/* Video Showcase */}
                 <section className="py-16 md:py-12 md:py-16 lg:py-24 lg:py-32 bg-primary">
                     <div className="max-w-container-max mx-auto px-margin-desktop text-center text-on-primary">
