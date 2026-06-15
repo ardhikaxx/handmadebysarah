@@ -7,6 +7,7 @@ import FadeIn from "./components/FadeIn";
 import OrderSteps from "./components/OrderSteps";
 import FaqHome from "./components/FaqHome";
 import CallToAction from "./components/CallToAction";
+import { products } from "./data/products";
 
 export default function Home() {
     return (
@@ -119,240 +120,53 @@ export default function Home() {
                         <a className="text-primary font-bold hover:underline" href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer">Lihat Semua Produk →</a>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-gutter">
-                        {/* Product 1 */}
-                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
-                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
-                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
-                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
-                                    <Image width={800} height={800} alt="Produk 1" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk1.jpg" />
-                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
-                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
-                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
+                        {products.map((product) => (
+                            <Link href={`/produk/${product.id}`} key={product.id} className="group relative block h-full">
+                                <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
+                                <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
+                                    <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
+                                        <Image width={800} height={800} alt={product.name} className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src={product.image} />
+                                        <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
+                                            <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                                                <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
+                                            </div>
+                                        </div>
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
+                                        <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
+                                            <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
+                                                <span className="material-symbols-outlined text-[18px]">visibility</span>
+                                                Lihat Detail
+                                            </span>
                                         </div>
                                     </div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
-                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
-                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
-                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
-                                            Beli Sekarang
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="p-6 flex flex-col flex-1 relative bg-white">
-                                    <div className="flex items-center gap-2 mb-3">
-                                        <div className="flex gap-0.5 text-[#FFB800]">
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                    <div className="p-6 flex flex-col flex-1 relative bg-white">
+                                        <div className="flex items-center gap-2 mb-3">
+                                            <div className="flex gap-0.5 text-[#FFB800]">
+                                                <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                                <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                                <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                                <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                                <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
+                                            </div>
+                                            <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">{product.rating.toFixed(1)}</span>
                                         </div>
-                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
-                                    </div>
-                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci Telanjang (PLUSHIE AMIGURUMI)">
-                                        Boneka Rajut Kelinci Telanjang (PLUSHIE AMIGURUMI)
-                                    </h3>
-                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
-                                        <div>
-                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
-                                            <p className="font-bold text-[18px] text-primary">Rp 145.902</p>
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
-                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        {/* Product 2 */}
-                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
-                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
-                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
-                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
-                                    <Image width={800} height={800} alt="Produk 2" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk2.jpg" />
-                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
-                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
-                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
-                                        </div>
-                                    </div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
-                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
-                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
-                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
-                                            Beli Sekarang
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="p-6 flex flex-col flex-1 relative bg-white">
-                                    <div className="flex items-center gap-2 mb-3">
-                                        <div className="flex gap-0.5 text-[#FFB800]">
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                        </div>
-                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
-                                    </div>
-                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci dengan Dress dan Topi Kodok">
-                                        Boneka Rajut Kelinci dengan Dress dan Topi Kodok
-                                    </h3>
-                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
-                                        <div>
-                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
-                                            <p className="font-bold text-[18px] text-primary">Rp 198.500</p>
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
-                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                        <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title={product.name}>
+                                            {product.name}
+                                        </h3>
+                                        <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
+                                            <div>
+                                                <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
+                                                <p className="font-bold text-[18px] text-primary">{product.formattedPrice}</p>
+                                            </div>
+                                            <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
+                                                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-
-                        {/* Product 3 */}
-                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
-                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
-                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
-                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
-                                    <Image width={800} height={800} alt="Produk 3" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk3.jpg" />
-                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
-                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
-                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
-                                        </div>
-                                    </div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
-                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
-                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
-                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
-                                            Beli Sekarang
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="p-6 flex flex-col flex-1 relative bg-white">
-                                    <div className="flex items-center gap-2 mb-3">
-                                        <div className="flex gap-0.5 text-[#FFB800]">
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                        </div>
-                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
-                                    </div>
-                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci dengan Dress dan Floppy Hat">
-                                        Boneka Rajut Kelinci dengan Dress dan Floppy Hat
-                                    </h3>
-                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
-                                        <div>
-                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
-                                            <p className="font-bold text-[18px] text-primary">Rp 242.000</p>
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
-                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        {/* Product 4 */}
-                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
-                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
-                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
-                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
-                                    <Image width={800} height={800} alt="Produk 4" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk4.jpg" />
-                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
-                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
-                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
-                                        </div>
-                                    </div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
-                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
-                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
-                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
-                                            Beli Sekarang
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="p-6 flex flex-col flex-1 relative bg-white">
-                                    <div className="flex items-center gap-2 mb-3">
-                                        <div className="flex gap-0.5 text-[#FFB800]">
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                        </div>
-                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
-                                    </div>
-                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci dengan Hoodie">
-                                        Boneka Rajut Kelinci dengan Hoodie
-                                    </h3>
-                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
-                                        <div>
-                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
-                                            <p className="font-bold text-[18px] text-primary">Rp 242.000</p>
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
-                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        {/* Product 5 */}
-                        <a href="https://s.shopee.co.id/AACyR1wgu6" target="_blank" rel="noopener noreferrer" className="group relative block h-full">
-                            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/50 via-primary-container to-secondary/50 rounded-[32px] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 ease-out z-0"></div>
-                            <div className="relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden border border-outline-variant/30 shadow-sm transition-all duration-500 z-10 group-hover:-translate-y-1">
-                                <div className="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-low">
-                                    <Image width={800} height={800} alt="Produk 5" className="w-full h-full object-cover transition-transform duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110" src="/assets/produk/produk5.jpg" />
-                                    <div className="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 translate-y-[-10px] group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
-                                        <div className="bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-white shadow-sm flex items-center gap-1.5">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
-                                            <span className="text-[9px] font-bold tracking-widest text-primary uppercase">Handmade</span>
-                                        </div>
-                                    </div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none"></div>
-                                    <div className="absolute inset-x-0 bottom-6 flex justify-center translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-out z-10 pointer-events-none">
-                                        <span className="pointer-events-auto flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-bold text-[13px] tracking-wide shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:bg-white hover:text-primary transition-colors duration-300 transform hover:scale-105 active:scale-95">
-                                            <span className="material-symbols-outlined text-[18px]">local_mall</span>
-                                            Beli Sekarang
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="p-6 flex flex-col flex-1 relative bg-white">
-                                    <div className="flex items-center gap-2 mb-3">
-                                        <div className="flex gap-0.5 text-[#FFB800]">
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                            <span className="material-symbols-outlined text-[14px] fill" style={{ 'fontVariationSettings': '"FILL" 1' }}>star</span>
-                                        </div>
-                                        <span className="text-[11px] text-on-surface-variant font-bold bg-surface-container px-2 py-0.5 rounded-md">5.0</span>
-                                    </div>
-                                    <h3 className="font-headline-md text-[16px] leading-snug text-on-surface group-hover:text-primary transition-colors duration-300 mb-5 line-clamp-2" title="Boneka Rajut Kelinci dengan Kemeja dan Topi Kodok">
-                                        Boneka Rajut Kelinci dengan Kemeja dan Topi Kodok
-                                    </h3>
-                                    <div className="mt-auto flex items-end justify-between pt-4 border-t border-outline-variant/30">
-                                        <div>
-                                            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1 font-bold">Harga</p>
-                                            <p className="font-bold text-[18px] text-primary">Rp 242.000</p>
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] group-hover:shadow-lg group-hover:shadow-primary/30">
-                                            <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                            </Link>
+                        ))}
                     </div>
                 </section>
                 {/* Alur Cara Pesan */}
