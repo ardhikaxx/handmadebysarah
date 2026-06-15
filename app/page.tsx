@@ -9,7 +9,7 @@ export default function Home() {
                 {/* Hero Section */}
                 <section id="beranda" className="px-margin-desktop py-20 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="space-y-8">
-                        <span className="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider">Premium Artisanal Craft</span>
+                        <span className="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider font-bold">Handmade By Sarah</span>
                         <h1 className="font-headline-xl text-headline-xl text-on-background leading-tight">
                             Produk Rajut Handmade Berkualitas dengan Sentuhan Kreativitas Nusantara
                         </h1>
