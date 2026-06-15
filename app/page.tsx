@@ -349,7 +349,7 @@ export default function Home() {
                     <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                         <div className="relative">
                             <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary-fixed rounded-full opacity-30 blur-3xl"></div>
-                            <Image width={800} height={800} alt="Craft Process" className="rounded-3xl soft-shadow relative z-10 w-full object-cover" data-alt="A detailed, warm-toned photograph of Indonesian artisans working together in a well-lit, minimalist studio. They are focused on creating intricate crochet patterns using sustainable materials. The setting is modern and artisanal, reflecting the brand's commitment to quality and tradition." src="/assets/produk/produk3.jpg" />
+                            <Image width={800} height={800} alt="Owner Handmade By Sarah" className="rounded-3xl soft-shadow relative z-10 w-full object-cover" data-alt="A portrait of the owner of Handmade By Sarah, representing the authentic and personal touch behind the brand." src="/assets/owner.jpg" />
                             <div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl soft-shadow z-20 max-w-[240px]">
                                 <p className="font-body-md italic text-primary">&quot;Kami percaya bahwa keindahan sejati lahir dari kesabaran dan keahlian tangan manusia.&quot;</p>
                             </div>
