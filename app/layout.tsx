@@ -39,6 +39,7 @@ import HashRemover from "./components/HashRemover";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import ScrollToTop from "./components/ScrollToTop";
 import CustomCursor from "./components/CustomCursor";
+import LoadingScreen from "./components/LoadingScreen";
 
 export default function RootLayout({
   children,
@@ -85,6 +86,7 @@ export default function RootLayout({
         <FloatingWhatsApp />
         <ScrollToTop />
         <CustomCursor />
+        <LoadingScreen />
         <Footer />
       </body>
     </html>
