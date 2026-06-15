@@ -15,8 +15,22 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Handmade By Sarah | Produk Rajut Handmade Berkualitas",
-  description: "Setiap simpul benang adalah dedikasi. Kami menghadirkan karya rajut premium yang menggabungkan tradisi lokal dengan desain kontemporer.",
+  title: "Handmade By Sarah | Pusat Produk Rajut Premium & Boneka Amigurumi",
+  description: "Beli aneka produk rajut handmade berkualitas tinggi. Menyediakan boneka rajut (amigurumi), tas totebag rajut, dompet, topi, aksesoris, hingga dekorasi rumah. Melayani pesanan custom sesuai keinginan Anda.",
+  keywords: ["rajut", "amigurumi", "boneka rajut", "tas rajut", "topi rajut", "dompet rajut", "dekorasi rajut", "handmade by sarah", "rajut custom", "kerajinan tangan", "hadiah unik"],
+  authors: [{ name: "Handmade By Sarah" }],
+  openGraph: {
+    title: "Handmade By Sarah | Produk Rajut Premium",
+    description: "Koleksi kerajinan rajut eksklusif, mulai dari boneka amigurumi lucu, tas, hingga aksesoris unik. Bisa custom sesuai permintaan!",
+    url: "https://handmadebysarah.com",
+    siteName: "Handmade By Sarah",
+    locale: "id_ID",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 import Navbar from "./components/Navbar";
