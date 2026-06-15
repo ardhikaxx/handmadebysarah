@@ -45,7 +45,7 @@ export default function Home() {
                             <h2 className="font-headline-lg text-headline-lg text-on-background">Kategori Pilihan</h2>
                             <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto">Temukan koleksi rajut terbaik kami yang dikelompokkan khusus untuk melengkapi gaya dan kenyamanan Anda.</p>
                         </div>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-gutter">
                             {/* Category Card Template */}
                             <SmoothScrollLink className="group block text-center space-y-4 transition-transform hover:-translate-y-2" href="/#katalog">
                                 <div className="aspect-square bg-white rounded-2xl flex items-center justify-center soft-shadow p-6 group-hover:bg-primary-container transition-colors">
