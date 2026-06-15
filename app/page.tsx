@@ -7,7 +7,7 @@ export default function Home() {
 
             <main className="pt-24 overflow-x-hidden">
                 {/* Hero Section */}
-                <section className="px-margin-desktop py-20 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <section id="beranda" className="px-margin-desktop py-20 max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="space-y-8">
                         <span className="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider">Premium Artisanal Craft</span>
                         <h1 className="font-headline-xl text-headline-xl text-on-background leading-tight">
@@ -39,7 +39,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Kategori Produk */}
-                <section className="bg-surface-container-low py-24 px-margin-desktop">
+                <section id="kategori" className="bg-surface-container-low py-24 px-margin-desktop">
                     <div className="max-w-container-max mx-auto">
                         <div className="text-center mb-16 space-y-4">
                             <h2 className="font-headline-lg text-headline-lg text-on-background">Kategori Pilihan</h2>
@@ -99,7 +99,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Produk Terlaris */}
-                <section className="py-32 px-margin-desktop max-w-container-max mx-auto">
+                <section id="katalog" className="py-32 px-margin-desktop max-w-container-max mx-auto">
                     <div className="flex justify-between items-end mb-16">
                         <div>
                             <h2 className="font-headline-lg text-headline-lg text-on-background">Produk Terlaris</h2>
@@ -345,7 +345,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Tentang Brand */}
-                <section className="bg-surface py-32 px-margin-desktop overflow-hidden">
+                <section id="tentang-kami" className="bg-surface py-32 px-margin-desktop overflow-hidden">
                     <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                         <div className="relative">
                             <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary-fixed rounded-full opacity-30 blur-3xl"></div>
@@ -403,7 +403,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Produk Custom */}
-                <section className="py-32 px-margin-desktop">
+                <section id="custom" className="py-32 px-margin-desktop">
                     <div className="max-w-container-max mx-auto bg-secondary-container rounded-3xl p-12 lg:p-20 flex flex-col lg:flex-row items-center gap-16">
                         <div className="lg:w-1/2 space-y-8">
                             <h2 className="font-headline-lg text-headline-lg text-on-secondary-container">Ingin Produk yang Lebih Personal?</h2>
@@ -419,7 +419,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Galeri */}
-                <section className="py-32 px-margin-desktop bg-surface">
+                <section id="galeri" className="py-32 px-margin-desktop bg-surface">
                     <div className="max-w-container-max mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="font-headline-lg text-headline-lg">Inspirasi Galeri</h2>
