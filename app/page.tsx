@@ -4,7 +4,6 @@ import SmoothScrollLink from "./components/SmoothScrollLink";
 import InstagramEmbed from "./components/InstagramEmbed";
 import { embed1, embed2, embed3 } from "./components/InstagramHtml";
 import FadeIn from "./components/FadeIn";
-import Testimonials from "./components/Testimonials";
 
 export default function Home() {
     return (
@@ -496,7 +495,6 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <Testimonials />
             </main>
         </>
     );
