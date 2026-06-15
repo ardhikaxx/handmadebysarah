@@ -63,18 +63,24 @@ export default function CustomerMap() {
           transition={{ duration: 0.8 }}
           className="relative w-full max-w-4xl mx-auto h-[400px] sm:h-[500px] bg-surface-container-low/50 backdrop-blur-sm border border-outline-variant/30 rounded-3xl shadow-xl overflow-hidden"
         >
-          {/* Aesthetic Grid Background simulating a map canvas */}
+          {/* Aesthetic Grid Background */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
           
-          {/* Faint Abstract Map Shape (Optional visual anchor) */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-5">
-            <svg viewBox="0 0 800 400" className="w-full h-full" fill="currentColor">
-              {/* Abstract blobs representing islands */}
-              <path d="M 100 150 Q 150 100 200 200 T 300 250 T 150 300 Z" />
-              <path d="M 350 250 Q 450 200 500 280 T 350 350 Z" />
-              <path d="M 550 150 Q 650 100 700 200 T 550 250 Z" />
-            </svg>
-          </div>
+          {/* Real Indonesia Map */}
+          <div 
+            className="absolute inset-0 opacity-20 pointer-events-none"
+            style={{
+              WebkitMaskImage: "url('/assets/indonesia.svg')",
+              maskImage: "url('/assets/indonesia.svg')",
+              WebkitMaskSize: "contain",
+              maskSize: "contain",
+              WebkitMaskPosition: "center",
+              maskPosition: "center",
+              WebkitMaskRepeat: "no-repeat",
+              maskRepeat: "no-repeat",
+              backgroundColor: "var(--md-sys-color-primary, #8b5a2b)"
+            }}
+          />
 
           {/* Glowing Pins */}
           {locations.map((loc, index) => (
