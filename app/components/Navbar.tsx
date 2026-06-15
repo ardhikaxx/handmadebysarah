@@ -51,9 +51,25 @@ export default function Navbar() {
     };
 
     return (
-        <div className="fixed top-0 w-full z-50 px-4 sm:px-8 pt-4 sm:pt-6 pointer-events-none">
-            <nav className="pointer-events-auto mx-auto max-w-7xl rounded-full bg-surface/80 backdrop-blur-xl border border-outline-variant/40 shadow-xl shadow-primary/5 px-4 sm:px-6 py-3 flex justify-between items-center transition-all duration-300">
-                <Link className="font-headline-md text-[20px] sm:text-[24px] font-bold text-primary tracking-tight pl-2 shrink-0" href="/">
+        <div className="fixed top-0 w-full z-50 pointer-events-none">
+            {/* Announcement Bar */}
+            <div className="pointer-events-auto bg-primary text-on-primary text-[13px] font-medium py-2 overflow-hidden flex whitespace-nowrap">
+                <div className="animate-marquee flex gap-12 items-center">
+                    <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
+                    <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
+                    <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
+                    <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
+                    <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
+                    <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
+                    <span>✨ Dibuat dengan cinta, simpul demi simpul</span>
+                    <span>🧵 100% Rajutan Tangan Asli Nusantara</span>
+                    <span>💖 Kualitas Premium & Bahan Ramah Lingkungan</span>
+                </div>
+            </div>
+
+            <div className="px-4 sm:px-8 pt-3 sm:pt-4">
+                <nav className="pointer-events-auto mx-auto max-w-7xl rounded-full bg-surface/80 backdrop-blur-xl border border-outline-variant/40 shadow-xl shadow-primary/5 px-4 sm:px-6 py-3 flex justify-between items-center transition-all duration-300">
+                    <Link className="font-headline-md text-[20px] sm:text-[24px] font-bold text-primary tracking-tight pl-2 shrink-0" href="/">
                     Handmade<span className="text-primary/70 font-medium">BySarah</span>
                 </Link>
                 
@@ -117,6 +133,7 @@ export default function Navbar() {
                     ))}
                 </div>
             )}
+            </div>
         </div>
     );
 }
